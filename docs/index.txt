@@ -3,3 +3,116 @@
 =============
 CrateDB Cloud
 =============
+
+`CrateDB Cloud`_ is a scalable SQL cloud service for industrial time series
+data.
+
+.. NOTE::
+
+    For now, CrateDB Cloud is by invitation only.
+
+    `Request a free account`_.
+
+.. rubric:: Table of Contents
+
+.. contents::
+   :local:
+
+.. _overview-screen:
+
+Overview Screen
+===============
+
+Here's what the CrateDB Cloud dashboard looks like when it first loads:
+
+.. image:: overview.png
+
+The navigation is split into two parts:
+
+- The `account menu`_ (along the top)
+
+- The `cluster menu`_ (down the left-hand side)
+
+The account menu and cluster menu are visible on every page.
+
+.. _account-menu:
+
+Account Menu
+------------
+
+Along the top of the screen, from left to right, the account menu has:
+
++-------------------------+---------------------------------------------------+
+| Item                    | Description                                       |
++=========================+===================================================+
+| Project select menu     | Displays a list of your current projects and      |
+|                         | allows you to switch between them.                |
+|                         |                                                   |
+|                         | Each project may contain multiple CrateDB         |
+|                         | clusters.                                         |
++-------------------------+---------------------------------------------------+
+| Cluster overview button | Takes you to the cluster `overview screen`_.      |
++-------------------------+---------------------------------------------------+
+| Connect button          | Connect to a rabbitMQ stream.                     |
+|                         |                                                   |
+|                         | This feature is temporarily non-functional for    |
+|                         | most users.                                       |
++-------------------------+---------------------------------------------------+
+| Support button          | Displays a list of support options.               |
++-------------------------+---------------------------------------------------+
+| Region select menu      | Displays a list of geographic regions and allows  |
+|                         | you to switch between them.                       |
+|                         |                                                   |
+|                         | You can run CrateDB clusters in three regions:    |
+|                         |                                                   |
+|                         | - `Azure East-US`_                                |
+|                         | - `Azure West-Europe`_                            |
+|                         | - Bregenz                                         |
+|                         |                                                   |
+|                         | The *Bregenz* region is managed by Crate.io and   |
+|                         | is located in Austria, Europe.                    |
++-------------------------+---------------------------------------------------+
+
+.. _cluster-menu:
+
+Cluster Menu
+------------
+
+Running down the left-hand side, from top to bottom, the cluster menu has:
+
+- :ref:`Overview <overview-screen>`
+
+- :ref:`Metrics <metrics-screen>`
+
+- :ref:`Logs <logs-screen>`
+
+- :ref:`Snapshots <snapshots-screen>`
+
+- `Admin UI`_ (opens in a new window)
+
+.. _metrics-screen:
+
+Metrics Screen
+==============
+
+.. image:: metrics.png
+
+.. _logs-screen:
+
+Logs Screen
+===========
+
+.. image:: logs.png
+
+.. _snapshots-screen:
+
+Snapshots Screen
+================
+
+.. image:: snapshots.png
+
+.. _CrateDB Cloud: ttps://crate.io/products/cratedb-cloud/
+.. _Request a free account: https://crate.io/products/cratedb-cloud/#sign-up
+.. _Azure East-US: https://azure.microsoft.com/en-us/global-infrastructure/regions/
+.. _Azure West-Europe: https://azure.microsoft.com/en-us/global-infrastructure/regions/
+.. _Admin UI: https://crate.io/docs/clients/admin-ui/en/latest/
