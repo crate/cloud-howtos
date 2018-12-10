@@ -34,7 +34,7 @@ Looking for more help?
 .. _StackOverflow: https://stackoverflow.com/tags/crate
 .. _the hosted documentation: https://crate.io/docs/cloud/en/latest/
 
-.. |build-status| image:: https://img.shields.io/travis/cloud-docs/sql-99.svg?style=flat
+.. |build-status| image:: https://api.travis-ci.org/crate/cloud-docs.svg?branch=master
     :alt: build status
     :scale: 100%
     :target: https://travis-ci.org/crate/cloud-docs
