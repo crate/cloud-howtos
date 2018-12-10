@@ -27,6 +27,41 @@ Here's what the CrateDB Cloud dashboard looks like when it first loads:
 
 .. image:: overview.png
 
+You can view the following information about your cluster:
+
+- Overview
+
+  - The name of your `cloud provider`_
+
+  - The `version`_ of CrateDB your cluster is running
+
+  - The number of `CrateDB nodes`_
+
+- Hardware specifications
+
+  - `CPU cores`_
+
+  - `Heap size`_
+
+  - Per-node disk size
+
+  - `HDD`_ type
+
+- Database
+
+  - Default `username`_
+
+- :ref:`Metrics <metrics-screen>` preview (last hour)
+
+- Cluster `logs`_ (last 24 hours)
+
+  - Error count
+
+  - Exception count
+
+Navigation
+----------
+
 The navigation is split into two parts:
 
 - The `account menu`_ (along the top)
@@ -38,7 +73,7 @@ The account menu and cluster menu are visible on every page.
 .. _account-menu:
 
 Account Menu
-------------
+............
 
 Along the top of the screen, from left to right, the account menu has:
 
@@ -76,9 +111,10 @@ Along the top of the screen, from left to right, the account menu has:
 .. _cluster-menu:
 
 Cluster Menu
-------------
+............
 
-Running down the left-hand side, from top to bottom, the cluster menu has:
+Running down the left-hand side, from top to bottom, the cluster menu lets you
+view:
 
 - :ref:`Overview <overview-screen>`
 
@@ -97,12 +133,27 @@ Metrics Screen
 
 .. image:: metrics.png
 
+On this screen, you can view two graphs:
+
+- *Average Response Time [s]*
+
+  This graph displays the average response time for each type of query being
+  executed on your cluster for the last thirty minutes.
+
+- *Average CrateDB Queries*
+
+  This graph displays the average number of each type of query per unit time
+  being executed on your cluster for the last thirty minutes.
+
 .. _logs-screen:
 
 Logs Screen
 ===========
 
 .. image:: logs.png
+
+On this screen, you can view and interact with a paginated table of aggregated
+cluster `logs`_. You can filter logs on text, dates, and log level.
 
 .. _snapshots-screen:
 
@@ -111,8 +162,26 @@ Snapshots Screen
 
 .. image:: snapshots.png
 
-.. _CrateDB Cloud: ttps://crate.io/products/cratedb-cloud/
-.. _Request a free account: https://crate.io/products/cratedb-cloud/#sign-up
+On this screen, you can view and interact with a paginated table of cluster
+`snapshots`_. You can revert back to a previous cluster state by *restoring* a
+snapshot.
+
+.. NOTE::
+
+    For the time being, you must email support if you wish to restore
+    a snapshot.
+
+.. _Admin UI: https://crate.io/docs/clients/admin-ui/en/latest/
 .. _Azure East-US: https://azure.microsoft.com/en-us/global-infrastructure/regions/
 .. _Azure West-Europe: https://azure.microsoft.com/en-us/global-infrastructure/regions/
-.. _Admin UI: https://crate.io/docs/clients/admin-ui/en/latest/
+.. _cloud provider: https://en.wikipedia.org/wiki/Infrastructure_as_a_service
+.. _CPU cores: https://en.wikipedia.org/wiki/Multi-core_processor
+.. _CrateDB Cloud: ttps://crate.io/products/cratedb-cloud/
+.. _CrateDB nodes: https://crate.io/docs/crate/guide/en/latest/architecture/shared-nothing.html#multi-node-setup-clusters
+.. _HDD: https://en.wikipedia.org/wiki/Hard_disk_drive
+.. _Heap size: https://crate.io/docs/crate/guide/en/latest/performance/memory.html
+.. _logs: https://crate.io/docs/crate/reference/en/latest/config/logging.html
+.. _Request a free account: https://crate.io/products/cratedb-cloud/#sign-up
+.. _snapshots: https://crate.io/docs/crate/reference/en/latest/admin/snapshots.html
+.. _username: https://crate.io/docs/crate/reference/en/latest/admin/user-management.html
+.. _version: https://crate.io/docs/crate/reference/en/latest/appendices/release-notes/index.html
