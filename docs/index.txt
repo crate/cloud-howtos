@@ -13,8 +13,6 @@ data.
 
     `Request a free account`_.
 
-.. rubric:: Table of Contents
-
 .. toctree::
 
    console.txt
