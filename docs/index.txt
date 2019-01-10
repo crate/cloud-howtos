@@ -131,19 +131,21 @@ view:
 Metrics Screen
 ==============
 
-.. image:: metrics.png
+Average Response Time [s]
+-------------------------
 
-On this screen, you can view two graphs:
+.. image:: metrics-time.png
 
-- *Average Response Time [s]*
+This graph displays the average response time for each type of query being
+executed on your cluster for the last thirty minutes.
 
-  This graph displays the average response time for each type of query being
-  executed on your cluster for the last thirty minutes.
+Average CrateDB Queries
+-----------------------
 
-- *Average CrateDB Queries*
+.. image:: metrics-queries.png
 
-  This graph displays the average number of each type of query per unit time
-  being executed on your cluster for the last thirty minutes.
+This graph displays the average number of each type of query per unit time
+being executed on your cluster for the last thirty minutes.
 
 .. _logs-screen:
 
