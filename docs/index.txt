@@ -14,9 +14,10 @@ data.
     `Request a free account`_.
 
 .. toctree::
+   :maxdepth: 2
 
-   console.txt
-   cli.txt
+   console
+   cli
 
 .. _CrateDB Cloud: https://crate.io/products/cratedb-cloud/
 .. _Request a free account: https://crate.io/products/cratedb-cloud/#sign-up

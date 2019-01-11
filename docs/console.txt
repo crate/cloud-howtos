@@ -2,6 +2,8 @@
 Console
 =======
 
+CrateDB Cloud provides a web administration console.
+
 .. rubric:: Table of Contents
 
 .. contents::
@@ -12,7 +14,7 @@ Console
 Overview Screen
 ===============
 
-Here's what the CrateDB Cloud dashboard looks like when it first loads:
+Here's what the console looks like when it first loads:
 
 .. image:: overview.png
 
