@@ -216,6 +216,12 @@ Sub-commands
 |              |                               |                                            |
 |              |   **required:** yes           |                                            |
 +--------------+-------------------------------+--------------------------------------------+
+| ``list``     | * ``--output-fmt``            | Lists all organizations that a user is part|
+|              |                               | of.                                        |
+|              |   **type:** string            |                                            |
+|              |                               | Output  fields: **id**, **name**           |
+|              |   **required:** no            | **planType**, and, **notification**        |
++--------------+-------------------------------+--------------------------------------------+
 
 .. _projects:
 
