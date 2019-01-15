@@ -208,19 +208,37 @@ Sub-commands
 |              |                               | command is only usable by users with super |
 |              |   **type:** string            | user privileges.                           |
 |              |                               |                                            |
-|              |   **required:** yes           | Output fields: **id**, **name**, and       |
-|              |                               | **planType**                               |
-|              | * ``--plan-type``             |                                            |
+|              |   **required:** yes           | **Output**:                                |
 |              |                               |                                            |
-|              |   **type:** integer/number    |                                            |
+|              | * ``--plan-type``             | .. code-block:: console                    |
 |              |                               |                                            |
-|              |   **required:** yes           |                                            |
+|              |   **type:** integer/number    |     {                                      |
+|              |                               |         "id": str,                         |
+|              |   **required:** yes           |         "name": str,                       |
+|              |                               |         "planType": int                    |
+|              |                               |     }                                      |
 +--------------+-------------------------------+--------------------------------------------+
 | ``list``     | * ``--output-fmt``            | Lists all organizations that a user is part|
 |              |                               | of.                                        |
 |              |   **type:** string            |                                            |
-|              |                               | Output  fields: **id**, **name**           |
-|              |   **required:** no            | **planType**, and, **notification**        |
+|              |                               | **Output**:                                |
+|              |   **required:** no            |                                            |
+|              |                               | .. code-block:: console                    |
+|              |   **value:** table OR json    |                                            |
+|              |                               |     [                                      |
+|              |                               |         {                                  |
+|              |                               |             "id": str,                     |
+|              |                               |             "name": str,                   |
+|              |                               |             "planType": int,               |
+|              |                               |             "notification": {              |
+|              |                               |                 "alert": {                 |
+|              |                               |                     "email": str,          |
+|              |                               |                     "enabled": bool        |
+|              |                               |                 }                          |
+|              |                               |             }                              |
+|              |                               |         }                                  |
+|              |                               |         ...                                |
+|              |                               |     ]                                      |
 +--------------+-------------------------------+--------------------------------------------+
 
 .. _projects:
@@ -256,24 +274,22 @@ Sub-commands
 | ``list``     | * ``--region``                | Outputs a list of projects for the         |
 |              |                               | specified region that the user is part of. |
 |              |   **type:** string            |                                            |
-|              |                               | Output fields: **id**, **name**,           |
-|              |   **required:** yes           | **region**, and **organizationId**         |
-|              |                               |                                            |
+|              |                               | **Output**:                                |
+|              |   **required:** yes           |                                            |
+|              |                               | .. code-block:: console                    |
 |              |   **value:** westeurope.azure |                                            |
-|              |   OR eastus.azure OR          |                                            |
-|              |   bregenz.a1                  |                                            |
-|              |                               |                                            |
-|              |   **default:** bregenz.a1     |                                            |
-|              |                               |                                            |
-|              | * ``--output-fmt``            |                                            |
-|              |                               |                                            |
-|              |   **type:** string            |                                            |
-|              |                               |                                            |
+|              |   OR eastus.azure OR          |     [                                      |
+|              |   bregenz.a1                  |         {                                  |
+|              |                               |             "id": str,                     |
+|              |   **default:** bregenz.a1     |             "name": str,                   |
+|              |                               |             "region": str,                 |
+|              | * ``--output-fmt``            |             "organizationId": str          |
+|              |                               |         }                                  |
+|              |   **type:** string            |         ...                                |
+|              |                               |     ]                                      |
 |              |   **required:** yes           |                                            |
 |              |                               |                                            |
 |              |   **value:** table OR json    |                                            |
-|              |                               |                                            |
-|              |   **default:** table          |                                            |
 +--------------+-------------------------------+--------------------------------------------+
 
 .. _clusters:
@@ -310,13 +326,88 @@ Sub-commands
 |              |                               | of a specified region that the user is part|
 |              |   **type:** string            | of. The list is filterable by project ID.  |
 |              |                               |                                            |
-|              |   **required:** yes           | Output fields: **id**, **name**,           |
-|              |                               | **numNodes**, **crateVersion**,            |
-|              |   **value:** westeurope.azure | **projectID**, **username**, and **fqdn**  |
-|              |   OR eastus.azure OR          |                                            |
-|              |   bregenz.a1                  |                                            |
+|              |   **required:** yes           | **Output**:                                |
 |              |                               |                                            |
-|              |   **default:** bregenz.a1     |                                            |
+|              |   **value:** westeurope.azure | .. code-block:: console                    |
+|              |   OR eastus.azure OR          |                                            |
+|              |   bregenz.a1                  |     [                                      |
+|              |                               |         {                                  |
+|              |   **default:** bregenz.a1     |             "id": str,                     |
+|              |                               |             "name": str,                   |
+|              | * ``--output-fmt``            |             "numNodes": int,               |
+|              |                               |             "crateVersion": str,           |
+|              |   **type:** string            |             "projectId": str,              |
+|              |                               |             "username": str,               |
+|              |   **required:** yes           |             "fqdn": str                    |
+|              |                               |         }                                  |
+|              |   **value:** table OR json    |         ...                                |
+|              |                               |     ]                                      |
+|              | * ``--project-id``            |                                            |
+|              |                               |                                            |
+|              |   **type:** string            |                                            |
+|              |                               |                                            |
+|              |   **required:** no            |                                            |
++--------------+-------------------------------+--------------------------------------------+
+
+.. _users:
+
+``users``
+............
+
+The users sub-commands allow you to create, modify and view project resources.
+
+.. _usersscusage:
+
+Usage
+^^^^^^^^^
+
+.. code-block:: console
+
+    sh$ croud users [subcommand] {parameters}
+
+For example:
+
+.. code-block:: console
+
+    sh$ croud users list --region westeurope.azure
+
+.. _users-sub-commands:
+
+Sub-commands
+^^^^^^^^^^^^
+
++--------------+-------------------------------+--------------------------------------------+
+| Sub-command  | Parameters                    | Description                                |
++==============+===============================+============================================+
+| ``roles``    |                               | See  `user roles`_.                        |
++--------------+-------------------------------+--------------------------------------------+
+
+.. _user roles:
+
+``users roles``
+"""""""""""""""
+
++--------------+-------------------------------+--------------------------------------------+
+| Sub-command  | Parameters                    | Description                                |
++==============+===============================+============================================+
+| ``add``      | * ``--resource``              | Assigns a new role to a user. **Note**:    |
+|              |                               | this command is only usable by users with  |
+|              |   **type:** string            | super user privileges                      |
+|              |                               |                                            |
+|              |   **required:** yes           | **Output**:                                |
+|              |                               |                                            |
+|              | * ``--role``                  | .. code-block:: console                    |
+|              |                               |                                            |
+|              |                               |     {                                      |
+|              |   **type:** string            |         "user": {                          |
+|              |                               |             "uid": str,                    |
+|              |   **required:** yes           |             "email": str,                  |
+|              |                               |             "username": str                |
+|              | * ``--user``                  |             "organizationId": str          |
+|              |                               |         }                                  |
+|              |   **type:** string            |     }                                      |
+|              |                               |                                            |
+|              |   **required:** yes           |                                            |
 |              |                               |                                            |
 |              | * ``--output-fmt``            |                                            |
 |              |                               |                                            |
@@ -325,12 +416,4 @@ Sub-commands
 |              |   **required:** yes           |                                            |
 |              |                               |                                            |
 |              |   **value:** table OR json    |                                            |
-|              |                               |                                            |
-|              |   **default:** table          |                                            |
-|              |                               |                                            |
-|              | * ``--project-id``            |                                            |
-|              |                               |                                            |
-|              |   **type:** string            |                                            |
-|              |                               |                                            |
-|              |   **required:** no            |                                            |
 +--------------+-------------------------------+--------------------------------------------+
