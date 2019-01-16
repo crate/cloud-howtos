@@ -56,15 +56,12 @@ usage:
 Commands
 ========
 
-Authentication
---------------
-
-CrateDB Cloud uses OAuth2 for authentication.
-
 .. _login:
 
 ``login``
-.........
+---------
+
+CrateDB Cloud uses OAuth2 for authentication.
 
 In order to interact with any of your CrateDB Cloud resources, you must first login.
 To do this, simply enter ``croud login`` into the CLI. This will open a browser window that will ask you
@@ -79,7 +76,7 @@ Example:
 .. _logout:
 
 ``logout``
-..........
+----------
 
 To logout, enter ``croud logout`` into the CLI. This will clear your access token and require you to login again
 before being able to access any resources.
@@ -93,7 +90,7 @@ Example:
 .. _me:
 
 ``me``
-......
+------
 
 The `me` command prints the username and email address of the currently authenticated user
 
@@ -103,8 +100,10 @@ Example:
 
     sh$ croud me
 
-Config
-------
+.. _config:
+
+``config``
+----------
 
 Croud uses several environment variables that control different aspects of interacting with CrateDB Cloud
 
@@ -132,7 +131,7 @@ Croud uses several environment variables that control different aspects of inter
 .. _get:
 
 ``get``
-.......
+~~~~~~~
 
 To see the value of an environment variable, you can use the `config get` command. The command has the following
 format: ``croud config get ENV_NAME`` where `ENV_NAME` is the name of the environment variable you wish to view.
@@ -148,7 +147,7 @@ This will return the default region used when querying or creating resources.
 .. _set:
 
 ``set``
-.......
+~~~~~~~
 
 To change the default value of an environment variable (usually so you do not need to always pass it as an argument on each
 command), you can use ``croud config set --ENV_NAME ENV_VALUE`` where `ENV_NAME` is the name of the environment variable
@@ -171,20 +170,12 @@ environment variable.
 
 This will only update the default output format.
 
-Resources
----------
-
 .. _organizations:
 
 ``organizations``
-.................
+-----------------
 
 The organizations sub-commands allow you to create, modify and view organization resources.
-
-.. _orgscusage:
-
-Usage
-^^^^^^^^^
 
 .. code-block:: console
 
@@ -196,62 +187,79 @@ For example:
 
     sh$ croud organizations create --name "My Organizations" --plan-type 1
 
-.. _org-sub-commands:
+.. _organizations.create:
 
-Sub-commands
-^^^^^^^^^^^^
+``create``
+~~~~~~~~~~
 
-+--------------+-------------------------------+--------------------------------------------+
-| Sub-command  | Parameters                    | Description                                |
-+==============+===============================+============================================+
-| ``create``   | * ``--name``                  | Creates an organization. **Note:** this    |
-|              |                               | command is only usable by users with super |
-|              |   **type:** string            | user privileges.                           |
-|              |                               |                                            |
-|              |   **required:** yes           | **Output**:                                |
-|              |                               |                                            |
-|              | * ``--plan-type``             | .. code-block:: console                    |
-|              |                               |                                            |
-|              |   **type:** integer/number    |     {                                      |
-|              |                               |         "id": str,                         |
-|              |   **required:** yes           |         "name": str,                       |
-|              |                               |         "planType": int                    |
-|              |                               |     }                                      |
-+--------------+-------------------------------+--------------------------------------------+
-| ``list``     | * ``--output-fmt``            | Lists all organizations that a user is part|
-|              |                               | of.                                        |
-|              |   **type:** string            |                                            |
-|              |                               | **Output**:                                |
-|              |   **required:** no            |                                            |
-|              |                               | .. code-block:: console                    |
-|              |   **value:** table OR json    |                                            |
-|              |                               |     [                                      |
-|              |                               |         {                                  |
-|              |                               |             "id": str,                     |
-|              |                               |             "name": str,                   |
-|              |                               |             "planType": int,               |
-|              |                               |             "notification": {              |
-|              |                               |                 "alert": {                 |
-|              |                               |                     "email": str,          |
-|              |                               |                     "enabled": bool        |
-|              |                               |                 }                          |
-|              |                               |             }                              |
-|              |                               |         }                                  |
-|              |                               |         ...                                |
-|              |                               |     ]                                      |
-+--------------+-------------------------------+--------------------------------------------+
++-----------------------+----------+--------------------------------+
+| Option                | Required | Description                    |
++=======================+==========+================================+
+| ``--name <STRING>``   | Yes      | The desired organization name. |
++-----------------------+----------+--------------------------------+
+| ``--plan-type <INT>`` | Yes      | The desired plan type.         |
+|                       |          |                                |
+|                       |          | FIXME: options?                |
++-----------------------+----------+--------------------------------+
+
+Creates an organization. **Note:** this
+command is only usable by users with super
+user privileges.
+
+**Output**:
+
+.. code-block:: console
+
+    {
+        "id": str,
+        "name": str,
+        "planType": int
+
+    }
+
+.. _organizations.list:
+
+``list``
+~~~~~~~~
+
++---------------------------+----------+----------------------------+
+| Option                    | Required | Description                |
++===========================+==========+============================+
+| ``--output-fmt <STRING>`` | No       | The desired output format. |
+|                           |          |                            |
+|                           |          | Options:                   |
+|                           |          |                            |
+|                           |          | - ``json`` (default)       |
+|                           |          | - ``table``                |
++---------------------------+----------+----------------------------+
+
+Lists all organizations that a user is part of.
+
+**Output**:
+
+.. code-block:: console
+
+    [
+       {
+           "id": str,
+           "name": str,
+           "planType": int,
+           "notification": {
+               "alert": {
+                   "email": str,
+                   "enabled": bool
+               }
+           }
+       }
+       ...
+   ]
 
 .. _projects:
 
 ``projects``
-............
+------------
 
 The projects sub-commands allow you to create, modify and view project resources.
-
-.. _projectsscusage:
-
-Usage
-^^^^^^^^^
 
 .. code-block:: console
 
@@ -263,46 +271,53 @@ For example:
 
     sh$ croud projects list --region westeurope.azure
 
-.. _projects-sub-commands:
+.. projects.list:
 
-Sub-commands
-^^^^^^^^^^^^
+``list``
+~~~~~~~~
 
-+--------------+-------------------------------+--------------------------------------------+
-| Sub-command  | Parameters                    | Description                                |
-+==============+===============================+============================================+
-| ``list``     | * ``--region``                | Outputs a list of projects for the         |
-|              |                               | specified region that the user is part of. |
-|              |   **type:** string            |                                            |
-|              |                               | **Output**:                                |
-|              |   **required:** yes           |                                            |
-|              |                               | .. code-block:: console                    |
-|              |   **value:** westeurope.azure |                                            |
-|              |   OR eastus.azure OR          |     [                                      |
-|              |   bregenz.a1                  |         {                                  |
-|              |                               |             "id": str,                     |
-|              |   **default:** bregenz.a1     |             "name": str,                   |
-|              |                               |             "region": str,                 |
-|              | * ``--output-fmt``            |             "organizationId": str          |
-|              |                               |         }                                  |
-|              |   **type:** string            |         ...                                |
-|              |                               |     ]                                      |
-|              |   **required:** yes           |                                            |
-|              |                               |                                            |
-|              |   **value:** table OR json    |                                            |
-+--------------+-------------------------------+--------------------------------------------+
++---------------------------+----------+----------------------------+
+| Option                    | Required | Description                |
++===========================+==========+============================+
+| ``--region <STRING>``     | Yes      | The specified region.      |
+|                           |          |                            |
+|                           |          | Options:                   |
+|                           |          |                            |
+|                           |          | - ``bregenz.a1`` (default) |
+|                           |          | - ``westeurope.azure``     |
+|                           |          | - ``eastus.azure``         |
++---------------------------+----------+----------------------------+
+| ``--output-fmt <STRING>`` | No       | The desired output format. |
+|                           |          |                            |
+|                           |          | Options:                   |
+|                           |          |                            |
+|                           |          | - ``json`` (default)       |
+|                           |          | - ``table``                |
++---------------------------+----------+----------------------------+
+
+Outputs a list of projects for the
+specified region that the user is part of.
+
+ **Output**:
+
+.. code-block:: console
+
+   [
+       {
+           "id": str,
+           "name": str,
+           "region": str,
+           "organizationId": str
+       }
+       ...
+   ]
 
 .. _clusters:
 
 ``clusters``
-............
+------------
 
 The clusters sub-commands allow you to create, modify and view cluster resources.
-
-.. _clustersscusage:
-
-Usage
-^^^^^^^^^
 
 .. code-block:: console
 
@@ -314,52 +329,62 @@ For example:
 
     sh$ croud clusters list --region westeurope.azure
 
-.. _clusters-sub-commands:
+.. clusters.list:
 
-Sub-commands
-^^^^^^^^^^^^
+``list``
+~~~~~~~~
 
-+--------------+-------------------------------+--------------------------------------------+
-| Sub-command  | Parameters                    | Description                                |
-+==============+===============================+============================================+
-| ``list``     | * ``--region``                | Outputs a list of clusters from projects   |
-|              |                               | of a specified region that the user is part|
-|              |   **type:** string            | of. The list is filterable by project ID.  |
-|              |                               |                                            |
-|              |   **required:** yes           | **Output**:                                |
-|              |                               |                                            |
-|              |   **value:** westeurope.azure | .. code-block:: console                    |
-|              |   OR eastus.azure OR          |                                            |
-|              |   bregenz.a1                  |     [                                      |
-|              |                               |         {                                  |
-|              |   **default:** bregenz.a1     |             "id": str,                     |
-|              |                               |             "name": str,                   |
-|              | * ``--output-fmt``            |             "numNodes": int,               |
-|              |                               |             "crateVersion": str,           |
-|              |   **type:** string            |             "projectId": str,              |
-|              |                               |             "username": str,               |
-|              |   **required:** yes           |             "fqdn": str                    |
-|              |                               |         }                                  |
-|              |   **value:** table OR json    |         ...                                |
-|              |                               |     ]                                      |
-|              | * ``--project-id``            |                                            |
-|              |                               |                                            |
-|              |   **type:** string            |                                            |
-|              |                               |                                            |
-|              |   **required:** no            |                                            |
-+--------------+-------------------------------+--------------------------------------------+
++---------------------------+----------+----------------------------+
+| Option                    | Required | Description                |
++===========================+==========+============================+
+| ``--region <STRING>``     | Yes      | The specified region.      |
+|                           |          |                            |
+|                           |          | Options:                   |
+|                           |          |                            |
+|                           |          | - ``bregenz.a1`` (default) |
+|                           |          | - ``westeurope.azure``     |
+|                           |          | - ``eastus.azure``         |
++---------------------------+----------+----------------------------+
+| ``--project-id <STRING>`` | No       | The specified project ID.  |
++---------------------------+----------+----------------------------+
+| ``--output-fmt <STRING>`` | Ye       | The desired output format. |
+|                           |          |                            |
+|                           |          | Options:                   |
+|                           |          |                            |
+|                           |          | - ``json``                 |
+|                           |          | - ``table``                |
++---------------------------+----------+----------------------------+
+
+FIXME: is ``--output-fmt`` really a required option? It has a default value for
+``projects list``.
+
+Outputs a list of clusters from projects
+of a specified region that the user is part
+of. The list is filterable by project ID.
+
+**Output**:
+
+.. code-block:: console
+
+   [
+       {
+           "id": str,
+           "name": str,
+           "numNodes": int,
+           "crateVersion": str,
+           "projectId": str,
+           "username": str,
+           "fqdn": str
+       }
+       ...
+   ]
 
 .. _users:
 
 ``users``
-............
+---------
 
 The users sub-commands allow you to create, modify and view project resources.
-
-.. _usersscusage:
-
-Usage
-^^^^^^^^^
 
 .. code-block:: console
 
@@ -371,64 +396,87 @@ For example:
 
     sh$ croud users list --region westeurope.azure
 
-.. _users-sub-commands:
+.. users.roles:
 
-Sub-commands
-^^^^^^^^^^^^
+``roles``
+~~~~~~~~~
 
-+--------------+-------------------------------+--------------------------------------------+
-| Sub-command  | Parameters                    | Description                                |
-+==============+===============================+============================================+
-| ``roles``    |                               | See  `user roles`_.                        |
-+--------------+-------------------------------+--------------------------------------------+
+.. users.roles.add:
 
-.. _user roles:
+``add``
+^^^^^^^
 
-``users roles``
-"""""""""""""""
++---------------------------+----------+------------------------------+
+| Option                    | Required | Description                  |
++===========================+==========+==============================+
+| ``--user <STRING>``       | Yes      | The specified username.      |
++---------------------------+----------+------------------------------+
+| ``--resource <STRING>``   | Yes      | The specified resource type. |
+|                           |          |                              |
+|                           |          | Options:                     |
+|                           |          |                              |
+|                           |          | - FIXME                      |
++---------------------------+----------+------------------------------+
+| ``--role <STRING>``       | Yes      | The desired role type.       |
+|                           |          |                              |
+|                           |          | Options:                     |
+|                           |          |                              |
+|                           |          | - FIXME                      |
++---------------------------+----------+------------------------------+
+| ``--output-fmt <STRING>`` | Yes      | The desired output format.   |
+|                           |          |                              |
+|                           |          | Options:                     |
+|                           |          |                              |
+|                           |          | - ``json``                   |
+|                           |          | - ``table``                  |
++---------------------------+----------+------------------------------+
 
-+--------------+-------------------------------+--------------------------------------------+
-| Sub-command  | Parameters                    | Description                                |
-+==============+===============================+============================================+
-| ``add``      | * ``--resource``              | Assigns a new role to a user. **Note**:    |
-|              |                               | this command is only usable by users with  |
-|              |   **type:** string            | super user privileges                      |
-|              |                               |                                            |
-|              |   **required:** yes           | **Output**:                                |
-|              |                               |                                            |
-|              | * ``--role``                  | .. code-block:: console                    |
-|              |                               |                                            |
-|              |                               |     {                                      |
-|              |   **type:** string            |         "user": {                          |
-|              |                               |             "uid": str,                    |
-|              |   **required:** yes           |             "email": str,                  |
-|              |                               |             "username": str,               |
-|              | * ``--user``                  |             "organizationId": str          |
-|              |                               |         }                                  |
-|              |   **type:** string            |     }                                      |
-|              |                               |                                            |
-|              |   **required:** yes           |                                            |
-|              |                               |                                            |
-|              | * ``--output-fmt``            |                                            |
-|              |                               |                                            |
-|              |   **type:** string            |                                            |
-|              |                               |                                            |
-|              |   **required:** yes           |                                            |
-|              |                               |                                            |
-|              |   **value:** table OR json    |                                            |
-+--------------+-------------------------------+--------------------------------------------+
-| ``list``     | * ``--output-fmt``            | Lists all roles a user can be assigned to. |
-|              |                               |                                            |
-|              |   **type:** string            |                                            |
-|              |                               | **Output**:                                |
-|              |   **required:** no            |                                            |
-|              |                               | .. code-block:: console                    |
-|              |   **value:** table OR json    |                                            |
-|              |                               |     [                                      |
-|              |                               |         {                                  |
-|              |                               |             "fqn": str,                    |
-|              |                               |             "friendlyName": str            |
-|              |                               |         }                                  |
-|              |                               |         ...                                |
-|              |                               |     ]                                      |
-+--------------+-------------------------------+--------------------------------------------+
+FIXME: is ``--output-fmt`` really a required option? It has a default value for
+``projects list``.
+
+Assigns a new role to a user. **Note**:
+this command is only usable by users with
+super user privileges
+
+**Output**:
+
+.. code-block:: console
+
+    {
+        "user": {
+            "uid": str,
+            "email": str,
+            "username": str,
+            "organizationId": str
+        }
+    }
+
+.. users.roles.list:
+
+``list``
+^^^^^^^^
+
++---------------------------+----------+----------------------------+
+| Option                    | Required | Description                |
++===========================+==========+============================+
+| ``--output-fmt <STRING>`` | Ye       | The desired output format. |
+|                           |          |                            |
+|                           |          | Options:                   |
+|                           |          |                            |
+|                           |          | - ``json``                 |
+|                           |          | - ``table``                |
++---------------------------+----------+----------------------------+
+
+Lists all roles a user can be assigned to.
+
+**Output**:
+
+.. code-block:: console
+
+    [
+        {
+            "fqn": str,
+            "friendlyName": str
+        }
+        ...
+    ]
