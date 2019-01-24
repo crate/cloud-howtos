@@ -20,8 +20,7 @@ Help
 Looking for more help?
 
 - Read `the hosted documentation`_
-- Check `StackOverflow`_ for common problems
-- Chat with us on `Slack`_
+- Chat with us via our `support channel`_
 - Get `paid support`_
 
 .. _contribution docs: CONTRIBUTING.rst
@@ -29,9 +28,8 @@ Looking for more help?
 .. _CrateDB Cloud: https://crate.io/products/cratedb-cloud/
 .. _developer docs: DEVELOP.rst
 .. _paid support: https://crate.io/pricing/
-.. _Slack: https://crate.io/docs/support/slackin/
+.. _support channel: https://crate.io/support/
 .. _Sphinx: http://www.sphinx-doc.org/en/master/
-.. _StackOverflow: https://stackoverflow.com/tags/crate
 .. _the hosted documentation: https://crate.io/docs/cloud/en/latest/
 
 .. |build-status| image:: https://api.travis-ci.org/crate/cloud-docs.svg?branch=master
