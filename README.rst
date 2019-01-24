@@ -20,7 +20,7 @@ Help
 Looking for more help?
 
 - Read `the hosted documentation`_
-- Reach out via any of our `support channels`_.
+- Chat with us via our `support channel`_
 - Get `paid support`_
 
 .. _contribution docs: CONTRIBUTING.rst
@@ -30,7 +30,6 @@ Looking for more help?
 .. _paid support: https://crate.io/pricing/
 .. _support channels: https://crate.io/support/
 .. _Sphinx: http://www.sphinx-doc.org/en/master/
-.. _StackOverflow: https://stackoverflow.com/tags/crate
 .. _the hosted documentation: https://crate.io/docs/cloud/en/latest/
 
 .. |build-status| image:: https://api.travis-ci.org/crate/cloud-docs.svg?branch=master
