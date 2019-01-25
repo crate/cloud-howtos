@@ -28,7 +28,7 @@ Looking for more help?
 .. _CrateDB Cloud: https://crate.io/products/cratedb-cloud/
 .. _developer docs: DEVELOP.rst
 .. _paid support: https://crate.io/pricing/
-.. _support channels: https://crate.io/support/
+.. _support channel: https://crate.io/support/
 .. _Sphinx: http://www.sphinx-doc.org/en/master/
 .. _the hosted documentation: https://crate.io/docs/cloud/en/latest/
 
