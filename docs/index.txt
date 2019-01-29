@@ -1,11 +1,11 @@
 .. _index:
 
-=============
-CrateDB Cloud
-=============
+=====================
+CrateDB Cloud Console
+=====================
 
-`CrateDB Cloud`_ is a scalable SQL cloud service for industrial time series
-data.
+The *Cloud Console* is a hosted web administration interface for interacting
+with `CrateDB Cloud`_.
 
 .. NOTE::
 
