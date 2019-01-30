@@ -19,18 +19,16 @@ Help
 
 Looking for more help?
 
-- Read `the hosted documentation`_
-- Chat with us via our `support channel`_
-- Get `paid support`_
+- Read `project docs`_
+- Check out our `support channels`_
 
 .. _contribution docs: CONTRIBUTING.rst
 .. _Crate.io: http://crate.io/
 .. _CrateDB Cloud: https://crate.io/products/cratedb-cloud/
 .. _developer docs: DEVELOP.rst
-.. _paid support: https://crate.io/pricing/
-.. _support channel: https://crate.io/support/
+.. _support channels: https://crate.io/support/
 .. _Sphinx: http://www.sphinx-doc.org/en/master/
-.. _the hosted documentation: https://crate.io/docs/cloud/en/latest/
+.. _project docs: https://crate.io/docs/cloud/en/latest/
 
 .. |build-status| image:: https://api.travis-ci.org/crate/cloud-docs.svg?branch=master
     :alt: build status
