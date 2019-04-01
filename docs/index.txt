@@ -178,7 +178,7 @@ snapshot.
 .. _Azure West-Europe: https://azure.microsoft.com/en-us/global-infrastructure/regions/
 .. _cloud provider: https://en.wikipedia.org/wiki/Infrastructure_as_a_service
 .. _CPU cores: https://en.wikipedia.org/wiki/Multi-core_processor
-.. _CrateDB Cloud: ttps://crate.io/products/cratedb-cloud/
+.. _CrateDB Cloud: https://crate.io/products/cratedb-cloud/
 .. _CrateDB nodes: https://crate.io/docs/crate/guide/en/latest/architecture/shared-nothing.html#multi-node-setup-clusters
 .. _HDD: https://en.wikipedia.org/wiki/Hard_disk_drive
 .. _Heap size: https://crate.io/docs/crate/guide/en/latest/performance/memory.html
