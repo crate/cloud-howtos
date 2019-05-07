@@ -30,12 +30,12 @@ Looking for more help?
 .. _Sphinx: http://www.sphinx-doc.org/en/master/
 .. _project docs: https://crate.io/docs/cloud/en/latest/
 
-.. |build-status| image:: https://api.travis-ci.org/crate/cloud-docs.svg?branch=master
+.. |build-status| image:: https://api.travis-ci.org/crate/cloud-console.svg?branch=master
     :alt: build status
     :scale: 100%
-    :target: https://travis-ci.org/crate/cloud-docs
+    :target: https://travis-ci.org/crate/cloud-console
 
-.. |docs| image:: https://readthedocs.org/projects/cloud-docs/badge/?version=latest
+.. |docs| image:: https://readthedocs.org/projects/cloud-console/badge/?version=latest
     :alt: Documentation Status
     :scale: 100%
-    :target: https://cloud-docs.readthedocs.io/en/latest/?badge=latest
+    :target: https://cloud-console.readthedocs.io/en/latest/?badge=latest
