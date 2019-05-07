@@ -7,5 +7,5 @@ exclude_patterns = ["out/**"]
 # so it can't find the file
 html_favicon = None
 
-site_url = 'https://crate.io/docs/cloud/en/latest/'
+site_url = 'https://crate.io/docs/cloud/console/en/latest/'
 extensions = ['sphinx_sitemap']
