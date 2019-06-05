@@ -20,7 +20,7 @@ with `CrateDB Cloud`_.
 
 .. _overview-screen:
 
-Overview Screen
+Overview screen
 ===============
 
 Here's what the CrateDB Cloud dashboard looks like when it first loads:
@@ -72,7 +72,7 @@ The account menu and cluster menu are visible on every page.
 
 .. _account-menu:
 
-Account Menu
+Account menu
 ............
 
 Along the top of the screen, from left to right, the account menu has:
@@ -110,7 +110,7 @@ Along the top of the screen, from left to right, the account menu has:
 
 .. _cluster-menu:
 
-Cluster Menu
+Cluster menu
 ............
 
 Running down the left-hand side, from top to bottom, the cluster menu lets you
@@ -128,10 +128,10 @@ view:
 
 .. _metrics-screen:
 
-Metrics Screen
+Metrics screen
 ==============
 
-Average Response Time [s]
+Average response time [s]
 -------------------------
 
 .. image:: metrics-time.png
@@ -139,7 +139,7 @@ Average Response Time [s]
 This graph displays the average response time for each type of query being
 executed on your cluster for the last thirty minutes.
 
-Average CrateDB Queries
+Average CrateDB queries
 -----------------------
 
 .. image:: metrics-queries.png
@@ -149,7 +149,7 @@ being executed on your cluster for the last thirty minutes.
 
 .. _logs-screen:
 
-Logs Screen
+Logs screen
 ===========
 
 .. image:: logs.png
@@ -159,7 +159,7 @@ cluster `logs`_. You can filter logs on text, dates, and log level.
 
 .. _snapshots-screen:
 
-Snapshots Screen
+Snapshots screen
 ================
 
 .. image:: snapshots.png
