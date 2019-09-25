@@ -1,11 +1,11 @@
 from crate.theme.rtd.conf.cloud_console import *
 
-exclude_patterns = ["out/**"]
+source_suffix = '.rst'
 
-# crate.theme sets html_favicon to favicon.png which causes a warning because
-# it should be a .ico and in addition there is no favicon.png in this project
-# so it can't find the file
-html_favicon = None
+exclude_patterns = ['.*', 'README.rst']
 
-site_url = 'https://crate.io/docs/cloud/console/en/latest/'
+master_doc = 'index'
+
 extensions = ['sphinx_sitemap']
+site_url = 'https://crate.io/docs/cloud/console/en/latest/'
+
