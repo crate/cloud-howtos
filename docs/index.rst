@@ -9,181 +9,241 @@ with `CrateDB Cloud`_.
 
 .. NOTE::
 
-    For now, CrateDB Cloud is by invitation only.
+    This is a reference manual.
 
-    `Request a free account`_.
+    Check out `Getting Started With CrateDB Cloud`_ for a beginner tutorial.
+
+.. SEEALSO::
+
+    This is an open source documentation project. We host the source
+    code and issue tracker on `GitHub`_.
 
 .. rubric:: Table of contents
 
 .. contents::
    :local:
 
-.. _overview-screen:
 
-Overview screen
-===============
+.. _basics:
 
-Here's what the CrateDB Cloud dashboard looks like when it first loads:
+Basics
+======
 
-.. image:: overview.png
+.. image:: _assets/img/start.png
 
-You can view the following information about your cluster:
+You must access the Cloud Console by `region`_.
 
-- Overview
+Available regions:
 
-  - The name of your `cloud provider`_
++-------------------+-----------------------------------+
+| Region            | URL                               |
++===================+===================================+
+| Azure East-US     | `eastus2.azure.cratedb.cloud`_    |
++-------------------+-----------------------------------+
+| Azure West-Europe | `westeurope.azure.cratedb.cloud`_ |
++-------------------+-----------------------------------+
+| Bregenz           | `bregenz.a1.cratedb.cloud`_       |
++-------------------+-----------------------------------+
 
-  - The `version`_ of CrateDB your cluster is running
+Azure East-US and Azure West-Europe are managed by `Microsoft Azure`_. The
+Bregenz region is managed by Crate.io and is located in Austria, Europe.
 
-  - The number of `CrateDB nodes`_
+Azure East-US is a good default region if you don't know which one to pick.
 
-- Hardware specifications
+From the Cloud Console homepage, you can sign in using your Cloud
+Console username and password or Microsoft Azure *Active Directory*
+(AD).
 
-  - `CPU cores`_
+If you don't have a Cloud Console account yet, select the sign-in option
+you wish to use. From there, you will be given the option to sign up.
 
-  - `Heap size`_
+Once signed in, you will be presented with your :ref:`account overview
+<basics-acc-overview>`.
 
-  - Per-node disk size
 
-  - `HDD`_ type
+.. _basics-acc-overview:
 
-- Database
+Account overview
+----------------
 
-  - Default `username`_
+The account overview screen lists the organizations and projects you
+can access.
 
-- :ref:`Metrics <metrics-screen>` preview (last hour)
+If you follow the `getting started`_ instructions and deploy a test
+cluster, your account overview will look something like this:
 
-- Cluster `logs`_ (last 24 hours)
+.. image:: _assets/img/account-overview.png
 
-  - Error count
+From the main panel, you can view :ref:`organization details <orgs>`,
+view :ref:`project details <project-overview>`, or :ref:`create a new
+project <project-create>`. You can collapse the individual organization
+widgets, so they take up less screen space.
 
-  - Exception count
+From the left-hand navigation menu, you can log out. You can also collapse
+the menu.
 
-Navigation
-----------
 
-The navigation is split into two parts:
+.. _orgs:
 
-- The `account menu`_ (along the top)
+Organizations
+=============
 
-- The `cluster menu`_ (down the left-hand side)
 
-The account menu and cluster menu are visible on every page.
+.. _org-overview:
 
-.. _account-menu:
+Organization overview
+---------------------
 
-Account menu
-............
+The organization overview screen lists all current organization projects
+for a specific region:
 
-Along the top of the screen, from left to right, the account menu has:
+.. image:: _assets/img/organization-overview.png
 
-+-------------------------+---------------------------------------------------+
-| Item                    | Description                                       |
-+=========================+===================================================+
-| Project select menu     | Displays a list of your current projects and      |
-|                         | allows you to switch between them.                |
-|                         |                                                   |
-|                         | Each project may contain multiple CrateDB         |
-|                         | clusters.                                         |
-+-------------------------+---------------------------------------------------+
-| Cluster overview button | Takes you to the cluster `overview screen`_.      |
-+-------------------------+---------------------------------------------------+
-| Connect button          | Connect to a rabbitMQ stream.                     |
-|                         |                                                   |
-|                         | This feature is temporarily non-functional for    |
-|                         | most users.                                       |
-+-------------------------+---------------------------------------------------+
-| Support button          | Displays a list of support options.               |
-+-------------------------+---------------------------------------------------+
-| Region select menu      | Displays a list of geographic regions and allows  |
-|                         | you to switch between them.                       |
-|                         |                                                   |
-|                         | You can run CrateDB clusters in three regions:    |
-|                         |                                                   |
-|                         | - `Azure East-US`_                                |
-|                         | - `Azure West-Europe`_                            |
-|                         | - Bregenz                                         |
-|                         |                                                   |
-|                         | The *Bregenz* region is managed by Crate.io and   |
-|                         | is located in Austria, Europe.                    |
-+-------------------------+---------------------------------------------------+
+From the main panel, you can switch regions, view :ref:`project details
+<project-overview>`, or :ref:`create a new project <project-create>`.
+Switching regions refreshes the display to show you projects in that
+region.
 
-.. _cluster-menu:
+From the left-hand navigation menu, you can now view :ref:`organization
+users <org-users>` or the :ref:`organization settings <org-settings>`.
+Or, you can go back to your :ref:`account overview
+<basics-acc-overview>`.
 
-Cluster menu
-............
 
-Running down the left-hand side, from top to bottom, the cluster menu lets you
-view:
+.. _org-users:
 
-- :ref:`Overview <overview-screen>`
+Organization users
+------------------
 
-- :ref:`Metrics <metrics-screen>`
+The organization users screen lists all current users along with their
+associated username, email, and role:
 
-- :ref:`Logs <logs-screen>`
+.. image:: _assets/img/org-users.png
 
-- :ref:`Snapshots <snapshots-screen>`
+From the main panel, you can edit user roles, remove users, or add users.
 
-- `Admin UI`_ (opens in a new window)
 
-.. _metrics-screen:
+.. _org-settings:
 
-Metrics screen
-==============
+Organization settings
+---------------------
 
-Average response time [s]
--------------------------
+The organization settings screen lists the current settings for the
+organization:
 
-.. image:: metrics-time.png
+.. image:: _assets/img/org-settings.png
 
-This graph displays the average response time for each type of query being
-executed on your cluster for the last thirty minutes.
+From the main panel, you can edit settings or delete the organization.
 
-Average CrateDB queries
------------------------
+If you set a notification email and turn on notifications, CrateDB Cloud
+will send relevant operational notifications via email.
 
-.. image:: metrics-queries.png
 
-This graph displays the average number of each type of query per unit time
-being executed on your cluster for the last thirty minutes.
+.. _projects:
 
-.. _logs-screen:
+Projects
+========
 
-Logs screen
-===========
 
-.. image:: logs.png
+.. _project-create:
 
-On this screen, you can view and interact with a paginated table of aggregated
-cluster `logs`_. You can filter logs on text, dates, and log level.
+Create a project
+----------------
 
-.. _snapshots-screen:
+If you select *Create project* from the :ref:`organization overview
+<org-overview>` screen, you have the option to create a new project by
+name:
 
-Snapshots screen
-================
+.. image:: _assets/img/create-project.png
 
-.. image:: snapshots.png
 
-On this screen, you can view and interact with a paginated table of cluster
-`snapshots`_. You can revert back to a previous cluster state by *restoring* a
-snapshot.
+.. _project-overview:
 
-.. NOTE::
+Project overview
+----------------
 
-    For the time being, you must email support if you wish to restore
-    a snapshot.
+The project overview screen lists all currently deployed project
+services along with their associated service name, type, and billing:
 
-.. _Admin UI: https://crate.io/docs/clients/admin-ui/en/latest/
-.. _Azure East-US: https://azure.microsoft.com/en-us/global-infrastructure/regions/
-.. _Azure West-Europe: https://azure.microsoft.com/en-us/global-infrastructure/regions/
-.. _cloud provider: https://en.wikipedia.org/wiki/Infrastructure_as_a_service
-.. _CPU cores: https://en.wikipedia.org/wiki/Multi-core_processor
+.. image:: _assets/img/project-overview.png
+
+From the main panel, you can select the individual services. For CrateDB
+clusters, this will bring up the :ref:`cluster overview
+<cluster-overview>`.
+
+From the left-hand navigation menu, you can now view :ref:`project users
+<project-users>` or the :ref:`project settings <project-settings>`.
+Notice also that deployed services appear as expandable menu items.
+
+
+.. _project-users:
+
+Project users
+-------------
+
+The project users screen lists all current users with access to the
+project, along with their associated username, email, and role:
+
+.. image:: _assets/img/project-users.png
+
+From the main panel, you can edit user roles, remove users, or add users.
+
+
+.. _project-settings:
+
+Project settings
+----------------
+
+The project settings screen lists the current settings for the project:
+
+.. image:: _assets/img/project-settings.png
+
+From the main panel, you can delete the project.
+
+
+.. _services:
+
+Services
+========
+
+
+.. _services-cluster:
+
+CrateDB clusters
+----------------
+
+
+.. _cluster-overview:
+
+Cluster overview
+................
+
+The cluster overview screen lists the current cluster information:
+
+.. image:: _assets/img/cluster-overview.png
+
+From the main panel, you can visit the cluster `Admin UI`_ at the *Cluster URL*.
+
+
+.. _cluster-settings:
+
+Cluster settings
+................
+
+The cluster settings screen lists the current settings for the cluster:
+
+.. image:: _assets/img/cluster-settings.png
+
+From the main panel, you can delete the cluster.
+
+
+.. _Admin UI: https://crate.io/docs/clients/admin-ui/
+.. _bregenz.a1.cratedb.cloud: https://bregenz.a1.cratedb.cloud/
 .. _CrateDB Cloud: https://crate.io/products/cratedb-cloud/
-.. _CrateDB nodes: https://crate.io/docs/crate/guide/en/latest/architecture/shared-nothing.html#multi-node-setup-clusters
-.. _HDD: https://en.wikipedia.org/wiki/Hard_disk_drive
-.. _Heap size: https://crate.io/docs/crate/guide/en/latest/performance/memory.html
-.. _logs: https://crate.io/docs/crate/reference/en/latest/config/logging.html
-.. _Request a free account: https://crate.io/products/cratedb-cloud/#sign-up
-.. _snapshots: https://crate.io/docs/crate/reference/en/latest/admin/snapshots.html
-.. _username: https://crate.io/docs/crate/reference/en/latest/admin/user-management.html
-.. _version: https://crate.io/docs/crate/reference/en/latest/appendices/release-notes/index.html
+.. _eastus2.azure.cratedb.cloud: https://eastus2.azure.cratedb.cloud/
+.. _Getting Started With CrateDB Cloud: https://crate.io/docs/cloud/getting-started/
+.. _getting started: https://crate.io/docs/cloud/getting-started/
+.. _GitHub: https://github.com/crate/cloud-console
+.. _Microsoft Azure: https://azure.microsoft.com/en-us/
+.. _region: https://azure.microsoft.com/en-us/global-infrastructure/regions/
+.. _westeurope.azure.cratedb.cloud: https://westeurope.azure.cratedb.cloud/
