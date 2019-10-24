@@ -224,6 +224,19 @@ The cluster overview screen lists the current cluster information:
 
 From the main panel, you can visit the cluster `Admin UI`_ at the *Cluster URL*.
 
+CrateDB clients can also use the *Cluster URL* to connect on port 4200 for
+`HTTP`_  or port 5432 for the `PostgreSQL wire protocol`_. Refer to your client
+documentation for more help.
+
+.. NOTE::
+
+    The *Cluster URL* points to a load-balancer that distributes traffic
+    internally to the whole CrateDB cluster.
+
+    The load-balancer closes idle connections after four minutes, therefore
+    client applications that require stateful connections (e.g., JDBC) must be
+    be configured to send *keep-alive heartbeat queries*.
+
 
 .. _cluster-settings:
 
@@ -244,6 +257,8 @@ From the main panel, you can delete the cluster.
 .. _Getting Started With CrateDB Cloud: https://crate.io/docs/cloud/getting-started/
 .. _getting started: https://crate.io/docs/cloud/getting-started/
 .. _GitHub: https://github.com/crate/cloud-console
+.. _HTTP: https://crate.io/docs/crate/reference/en/latest/interfaces/http.html
 .. _Microsoft Azure: https://azure.microsoft.com/en-us/
+.. _PostgreSQL wire protocol: https://crate.io/docs/crate/reference/en/latest/interfaces/postgres.html
 .. _region: https://azure.microsoft.com/en-us/global-infrastructure/regions/
 .. _westeurope.azure.cratedb.cloud: https://westeurope.azure.cratedb.cloud/
