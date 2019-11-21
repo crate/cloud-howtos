@@ -252,7 +252,7 @@ by selecting a scale unit.
 
 .. image:: _assets/img/cluster_settings_scale.png
 
-With the `Delete` button, you can delete the current cluster.
+With the *Delete* button, you can delete the current cluster.
 
 .. image:: _assets/img/cluster_settings_delete.png
 
