@@ -243,11 +243,19 @@ documentation for more help.
 Cluster settings
 ................
 
-The cluster settings screen lists the current settings for the cluster:
+The cluster settings screen lists the current cluster plan and unit.
 
-.. image:: _assets/img/cluster-settings.png
+.. image:: _assets/img/cluster_settings.png
 
-From the main panel, you can delete the cluster.
+With the *Scale* button, you are able to scale your cluster up or down,
+by selecting a scale unit.
+
+.. image:: _assets/img/cluster_settings_scale.png
+
+With the *Delete* button, you can delete the current cluster.
+
+.. image:: _assets/img/cluster_settings_delete.png
+
 
 
 .. _Admin UI: https://crate.io/docs/clients/admin-ui/
