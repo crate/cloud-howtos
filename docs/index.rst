@@ -247,7 +247,7 @@ The cluster settings screen lists the current cluster plan and unit.
 
 .. image:: _assets/img/cluster_settings.png
 
-With the `Scale` button, you are able to scale your cluster up or down,
+With the *Scale* button, you are able to scale your cluster up or down,
 by selecting a scale unit.
 
 .. image:: _assets/img/cluster_settings_scale.png
