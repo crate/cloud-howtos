@@ -25,6 +25,7 @@ performing specific actions in the Console, and more.
     :titlesonly:
 
     overview
+    add-users
     user-roles
 
 
