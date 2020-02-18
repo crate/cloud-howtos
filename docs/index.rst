@@ -25,8 +25,9 @@ performing specific actions in the Console, and more.
     :titlesonly:
 
     overview
-    add-users
+    create-org
     user-roles
+    add-users
 
 
 .. _Getting Started With CrateDB Cloud: https://crate.io/docs/cloud/getting-started/
