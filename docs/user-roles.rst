@@ -1,7 +1,7 @@
 .. _user-roles:
 
 ==========
-User Roles
+User roles
 ==========
 
 An overview of user roles and their privileges for organizations and projects.
