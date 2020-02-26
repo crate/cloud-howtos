@@ -18,8 +18,8 @@ The Account Overview page
 =========================
 
 When you first access the CrateDB Cloud Console, you will arrive at the Account
-Overview page. If you have not previously created an organization, the page will
-display an empty box logo and the message *No organization yet*.
+Overview page. If you have not previously created an organization, the page
+will display an empty box logo and the message *No organization yet*.
 
 .. image:: _assets/img/account-overview-new.png
 
@@ -28,8 +28,8 @@ prompting you to name the organization.
 
 .. image:: _assets/img/create-org.png
 
-Once you have decided on a name, click *Create* in the bottom right corner
-to proceed. When the organization has been created, you will be returned to the
+Once you have decided on a name, click *Create* in the bottom right corner to
+proceed. When the organization has been created, you will be returned to the
 Account Overview page, where the organization will now be listed.
 
 
@@ -83,11 +83,11 @@ projects`_.
 
 The *Edit* button allows you to change the organization name, the notification
 email, and the notification setting. If you set notifications to enabled and
-provide a valid notification email, CrateDB Cloud will send relevant operational
-notifications via email to that address.
+provide a valid notification email, CrateDB Cloud will send relevant
+operational notifications via email to that address.
 
 
 .. _guide on creating a new project: https://crate.io/docs/cloud-console/docs/create-project.rst
 .. _guide to adding users to organizations and projects: https://crate.io/docs/cloud-console/docs/add-users.rst
-.. _guide to user roles in CrateDB Cloud: https://crate.io/docs/cloud-console/docs/user-roles.rst
 .. _guide to creating projects: https://crate.io/docs/cloud-console/docs/create-project.rst
+.. _guide to user roles in CrateDB Cloud: https://crate.io/docs/cloud-console/docs/user-roles.rst

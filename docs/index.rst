@@ -16,8 +16,8 @@ performing specific actions in the Console, and more.
 
 .. SEEALSO::
 
-    This is an open source documentation project. We host the source
-    code and issue tracker on `GitHub`_.
+    This is an open source documentation project. We host the source code and
+    issue tracker on `GitHub`_.
 
 .. rubric:: Table of contents
 

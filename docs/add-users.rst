@@ -13,8 +13,8 @@ their privileges.
    :local:
 
 In CrateDB Cloud you can add team members to your organizations and projects.
-In order to add a user, they must first have signed up for CrateDB Cloud.
-Once they have an existing account, they can be added as a user.
+In order to add a user, they must first have signed up for CrateDB Cloud. Once
+they have an existing account, they can be added as a user.
 
 .. NOTE::
 
@@ -72,8 +72,8 @@ for this specific project.
 
 Finally, click *Save* to add the user.
 
-To edit a user's role, simply click the pen icon corresponding to that user
-in the user table.
+To edit a user's role, simply click the pen icon corresponding to that user in
+the user table.
 
 Confirm any changes by clicking the check mark.
 
@@ -83,12 +83,12 @@ Confirm any changes by clicking the check mark.
 Restrictions
 ============
 
-- An organization needs to have at least one organization admin. It is therefore
-  not possible to remove the organization admin if there is only one.
+- An organization needs to have at least one organization admin. It is
+  therefore not possible to remove the organization admin if there is only one.
 
-- By contrast, a project does not require a project admin. This is because
-  every organization admin has access to each project of that organization
-  without having to be a member of that project.
+- By contrast, a project does not require a project admin. This is because every
+  organization admin has access to each project of that organization without
+  having to be a member of that project.
 
 - If a user is an organization admin but added as project member to a project,
   they will still have administrative rights in that project.

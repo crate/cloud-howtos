@@ -13,13 +13,12 @@ An overview of user roles and their privileges for organizations and projects.
 
 .. _org-roles:
 
-
 Organization roles
 ==================
 
 An *organization admin* can add users to and remove users from an organization.
-Admins can perform all available operations for projects and services. They have
-access to the organization's Audit Log.
+Admins can perform all available operations for projects and services. They
+have access to the organization's Audit Log.
 
 Each organization must have at least one admin.
 
@@ -29,7 +28,6 @@ can't edit, add, or remove users.
 They only have access to projects they are part of.
 
 .. _project-roles:
-
 
 Project roles
 =============

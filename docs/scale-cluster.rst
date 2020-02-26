@@ -4,11 +4,11 @@
 Scale a cluster
 ===============
 
-This guide will provide a quick overview of how to scale your cluster using
-the CrateDB Cloud Console. For the purposes of this guide, it is assumed that
-you have a cluster up and running and can access the Console. If not, please
-refer to the `guide on how to deploy a cluster via the Microsoft Azure
-Marketplace for the first time`_.
+This guide will provide a quick overview of how to scale your cluster using the
+CrateDB Cloud Console. For the purposes of this guide, it is assumed that you
+have a cluster up and running and can access the Console. If not, please refer
+to the `guide on how to deploy a cluster via the Microsoft Azure Marketplace
+for the first time`_.
 
 If you scale your cluster downward rather than upward, special configuration
 may be required: see :ref:`Important things to know<scale-cluster-important>`.
@@ -36,9 +36,9 @@ to your organization.
 
 .. image:: _assets/img/account-overview.png
 
-To scale a cluster, you need to know what project the cluster belongs to.
-Click on that project's name in the Account Overview page to go to the
-Project Overview page.
+To scale a cluster, you need to know what project the cluster belongs to. Click
+on that project's name in the Account Overview page to go to the Project
+Overview page.
 
 .. image:: _assets/img/project-overview.png
 
@@ -48,8 +48,8 @@ Overview page.
 
 .. image:: _assets/img/cluster-overview.png
 
-Now, as a final step, click on Settings in the left hand menu to arrive at
-the Cluster Settings page, where you can scale your cluster.
+Now, as a final step, click on Settings in the left hand menu to arrive at the
+Cluster Settings page, where you can scale your cluster.
 
 
 .. _scale-cluster-instructions:
@@ -68,8 +68,8 @@ Finally, confirm with *Save*.
 
 The values corresponding to each scale unit will vary depending on the plan
 selected for the cluster. This also affects the cluster configuration and
-pricing. A warning will appear to remind the user that changing scale
-settings will be reflected in the charges billed.
+pricing. A warning will appear to remind the user that changing scale settings
+will be reflected in the charges billed.
 
 
 .. _scale-cluster-important:
@@ -91,5 +91,5 @@ When scaling a cluster, there are some important aspects to keep in mind:
   Documentation`_.
 
 
+.. _Crate DB Documentation: https://crate.io/docs/crate/reference/en/latest/general/ddl/replication.html
 .. _guide on how to deploy a cluster via the Microsoft Azure Marketplace for the first time: https://help.crate.io/en/articles/3603380-how-to-deploy-a-cluster-via-the-azure-marketplace
-.. _Crate DB   Documentation: https://crate.io/docs/crate/reference/en/latest/general/ddl/replication.html
