@@ -4,10 +4,10 @@
 Restore backups and snapshots
 =============================
 
-This short guide explains in general terms the CrateDB Cloud backup policy
-for automatically generating snapshots of the cluster data and how one can
-use such snapshots to restore data. A more detailed technical discussion of
-how CrateDB handles snapshots can be found in the `CrateDB Documentation`_.
+This short guide explains in general terms the CrateDB Cloud backup policy for
+automatically generating snapshots of the cluster data and how one can use such
+snapshots to restore data. A more detailed technical discussion of how CrateDB
+handles snapshots can be found in the `CrateDB Documentation`_.
 
 .. rubric:: Table of contents
 
@@ -50,15 +50,15 @@ Restore a snapshot
 ==================
 
 Once a snapshot of a table or partition has been created, it can be restored.
-Restoring a snapshot resets that table or partition to the state it was in
-when that snapshot was created.
+Restoring a snapshot resets that table or partition to the state it was in when
+that snapshot was created.
 
-You can restore a snapshot in two ways. One option is to `contact CrateDB
-Cloud support`_. We are happy to assist. Alternatively, you can use the
-CrateDB Admin UI to do it yourself. Please refer to the `Reference`_ in the
-documentation for assistance.
+You can restore a snapshot in two ways. One option is to `contact CrateDB Cloud
+support`_. We are happy to assist. Alternatively, you can use the CrateDB Admin
+UI to do it yourself. Please refer to the `Reference`_ in the documentation for
+assistance.
 
 
-.. _CrateDB Documentation: https://crate.io/docs/crate/reference/en/latest/admin/snapshots.html
 .. _contact CrateDB Cloud support: https://help.crate.io/en/
+.. _CrateDB Documentation: https://crate.io/docs/crate/reference/en/latest/admin/snapshots.html
 .. _Reference: https://crate.io/docs/crate/reference/en/latest/admin/snapshots.html#restore

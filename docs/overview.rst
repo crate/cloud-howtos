@@ -39,12 +39,11 @@ Bregenz region is managed by Crate.io and is located in Austria, Europe.
 
 Azure East-US is a good default region if you don't know which one to pick.
 
-From the Cloud Console homepage, you can sign in using your Cloud
-Console username and password or Microsoft Azure *Active Directory*
-(AD).
+From the Cloud Console homepage, you can sign in using your Cloud Console
+username and password or Microsoft Azure *Active Directory* (AD).
 
-If you don't have a Cloud Console account yet, select the sign-in option
-you wish to use. From there, you will be given the option to sign up.
+If you don't have a Cloud Console account yet, select the sign-in option you
+wish to use. From there, you will be given the option to sign up.
 
 Once signed in, you will be presented with your :ref:`account overview
 <basics-acc-overview>`.
@@ -55,21 +54,21 @@ Once signed in, you will be presented with your :ref:`account overview
 Account overview
 ----------------
 
-The account overview screen lists the organizations and projects you
-can access.
+The account overview screen lists the organizations and projects you can
+access.
 
-If you follow the `getting started`_ instructions and deploy a test
-cluster, your account overview will look something like this:
+If you follow the `getting started`_ instructions and deploy a test cluster,
+your account overview will look something like this:
 
 .. image:: _assets/img/account-overview.png
 
-From the main panel, you can view :ref:`organization details <orgs>`,
-view :ref:`project details <project-overview>`, or :ref:`create a new
-project <project-create>`. You can collapse the individual organization
-widgets, so they take up less screen space.
+From the main panel, you can view :ref:`organization details <orgs>`, view
+:ref:`project details <project-overview>`, or :ref:`create a new project
+<project-create>`. You can collapse the individual organization widgets, so
+they take up less screen space.
 
-From the left-hand navigation menu, you can log out. You can also collapse
-the menu.
+From the left-hand navigation menu, you can log out. You can also collapse the
+menu.
 
 
 .. _orgs:
@@ -83,20 +82,18 @@ Organizations
 Organization overview
 ---------------------
 
-The organization overview screen lists all current organization projects
-for a specific region:
+The organization overview screen lists all current organization projects for a
+specific region:
 
 .. image:: _assets/img/organization-overview.png
 
 From the main panel, you can switch regions, view :ref:`project details
-<project-overview>`, or :ref:`create a new project <project-create>`.
-Switching regions refreshes the display to show you projects in that
-region.
+<project-overview>`, or :ref:`create a new project <project-create>`. Switching
+regions refreshes the display to show you projects in that region.
 
-From the left-hand navigation menu, you can now view :ref:`organization
-users <org-users>` or the :ref:`organization settings <org-settings>`.
-Or, you can go back to your :ref:`account overview
-<basics-acc-overview>`.
+From the left-hand navigation menu, you can now view :ref:`organization users
+<org-users>` or the :ref:`organization settings <org-settings>`. Or, you can go
+back to your :ref:`account overview <basics-acc-overview>`.
 
 
 .. _org-users:
@@ -124,8 +121,8 @@ organization:
 
 From the main panel, you can edit settings or delete the organization.
 
-If you set a notification email and turn on notifications, CrateDB Cloud
-will send relevant operational notifications via email.
+If you set a notification email and turn on notifications, CrateDB Cloud will
+send relevant operational notifications via email.
 
 
 .. _projects:
@@ -140,8 +137,7 @@ Create a project
 ----------------
 
 If you select *Create project* from the :ref:`organization overview
-<org-overview>` screen, you have the option to create a new project by
-name:
+<org-overview>` screen, you have the option to create a new project by name:
 
 .. image:: _assets/img/create-project.png
 
@@ -151,18 +147,17 @@ name:
 Project overview
 ----------------
 
-The project overview screen lists all currently deployed project
-services along with their associated service name, type, and billing:
+The project overview screen lists all currently deployed project services along
+with their associated service name, type, and billing:
 
 .. image:: _assets/img/project-overview.png
 
 From the main panel, you can select the individual services. For CrateDB
-clusters, this will bring up the :ref:`cluster overview
-<cluster-overview>`.
+clusters, this will bring up the :ref:`cluster overview <cluster-overview>`.
 
 From the left-hand navigation menu, you can now view :ref:`project users
-<project-users>` or the :ref:`project settings <project-settings>`.
-Notice also that deployed services appear as expandable menu items.
+<project-users>` or the :ref:`project settings <project-settings>`. Notice also
+that deployed services appear as expandable menu items.
 
 
 .. _project-users:
@@ -170,8 +165,8 @@ Notice also that deployed services appear as expandable menu items.
 Project users
 -------------
 
-The project users screen lists all current users with access to the
-project, along with their associated username, email, and role:
+The project users screen lists all current users with access to the project,
+along with their associated username, email, and role:
 
 .. image:: _assets/img/project-users.png
 
@@ -236,15 +231,14 @@ The cluster settings screen lists the current cluster plan and unit.
 
 .. image:: _assets/img/cluster_settings.png
 
-With the *Scale* button, you are able to scale your cluster up or down,
-by selecting a scale unit.
+With the *Scale* button, you are able to scale your cluster up or down, by
+selecting a scale unit.
 
 .. image:: _assets/img/cluster_settings_scale.png
 
 With the *Delete* button, you can delete the current cluster.
 
 .. image:: _assets/img/cluster_settings_delete.png
-
 
 
 .. _Admin UI: https://crate.io/docs/clients/admin-ui/
