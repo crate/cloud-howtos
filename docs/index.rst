@@ -1,18 +1,15 @@
 .. _index:
 
-=======================
-CrateDB Cloud Reference
-=======================
+===========================
+CrateDB Cloud How-To Guides
+===========================
 
-This is the Reference for the CrateDB Cloud Console, the UI tool for CrateDB's
-Cloud service. Here you will find tutorials on how to get underway, guides on
-performing specific actions in the Console, and more.
+This is a collection of how-to guides for CrateDB Cloud.
 
 .. NOTE::
 
-    This is a reference manual.
-
-    Check out `Getting Started With CrateDB Cloud`_ for a beginner tutorial.
+    This resource assumes you know the basics. If not, check out the
+    `Tutorials`_ section for beginner material.
 
 .. SEEALSO::
 
@@ -34,5 +31,5 @@ performing specific actions in the Console, and more.
     snapshot
 
 
-.. _Getting Started With CrateDB Cloud: https://crate.io/docs/cloud/getting-started/
-.. _GitHub: https://github.com/crate/cloud-console
+.. _Tutorials: https://crate.io/docs/cloud/tutorials/
+.. _GitHub: https://github.com/crate/cloud-howtos/
