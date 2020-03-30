@@ -2,9 +2,7 @@
 CrateDB Cloud How-To Guides
 ===========================
 
-|build-status| |docs|
-
-How-To Guides for `CrateDB Cloud`_.
+How-to guides for `CrateDB Cloud`_.
 
 
 Contributing
@@ -23,17 +21,6 @@ Looking for more help?
 
 - Read `project docs`_
 - Check out our `support channels`_
-
-
-.. |build-status| image:: https://api.travis-ci.org/crate/cloud-console.svg?branch=master
-    :alt: Build status
-    :scale: 100%
-    :target: https://travis-ci.org/crate/cloud-console
-
-.. |docs| image:: https://readthedocs.org/projects/cloud-console/badge/?version=latest
-    :alt: Docs status
-    :scale: 100%
-    :target: https://crate.io/docs/cloud/console/en/latest
 
 
 .. _contribution docs: CONTRIBUTING.rst
