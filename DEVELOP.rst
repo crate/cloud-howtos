@@ -59,21 +59,21 @@ release version), please contact the `@crate/docs`_ team.
 
 
 .. _@crate/docs: https://github.com/orgs/crate/teams/docs
-.. _configured: https://github.com/crate/cloud-console/blob/master/.travis.yml
+.. _configured: https://github.com/crate/cloud-howtos/blob/master/.travis.yml
 .. _fswatch: https://github.com/emcrisostomo/fswatch
 .. _Read the Docs: http://readthedocs.org
 .. _ReStructuredText: http://docutils.sourceforge.net/rst.html
 .. _Sphinx: http://sphinx-doc.org/
 
 
-.. |utils| image:: https://img.shields.io/endpoint.svg?color=blue&url=https%3A%2F%2Fraw.githubusercontent.com%2Fcrate%2Fcloud-console%2Fmaster%2Fdocs%2Futils.json
+.. |utils| image:: https://img.shields.io/endpoint.svg?color=blue&url=https%3A%2F%2Fraw.githubusercontent.com%2Fcrate%2Fcloud-howtos%2Fmaster%2Fdocs%2Futils.json
     :alt: Utils version
-    :target: https://github.com/crate/cloud-console/blob/master/docs/utils.json
+    :target: https://github.com/crate/cloud-howtos/blob/master/docs/utils.json
 
-.. |travis| image:: https://img.shields.io/travis/crate/cloud-console.svg?style=flat
+.. |travis| image:: https://img.shields.io/travis/crate/cloud-howtos.svg?style=flat
     :alt: Travis CI status
-    :target: https://travis-ci.org/crate/cloud-console
+    :target: https://travis-ci.org/crate/cloud-howtos
 
-.. |rtd| image:: https://readthedocs.org/projects/cloud-console/badge/?version=latest
+.. |rtd| image:: https://readthedocs.org/projects/crate-cloud-howtos/badge/?version=latest
     :alt: Read The Docs status
-    :target: https://readthedocs.org/projects/cloud-console
+    :target: https://readthedocs.org/projects/crate-cloud-howtos
