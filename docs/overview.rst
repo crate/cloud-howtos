@@ -27,20 +27,20 @@ Available regions:
 +-------------------+-----------------------------------+
 | Region            | URL                               |
 +===================+===================================+
-| Azure East-US     | `eastus2.azure.cratedb.cloud`_    |
+| Azure East-US2    | `eastus2.azure.cratedb.cloud`_    |
 +-------------------+-----------------------------------+
 | Azure West-Europe | `westeurope.azure.cratedb.cloud`_ |
 +-------------------+-----------------------------------+
 | Bregenz           | `bregenz.a1.cratedb.cloud`_       |
 +-------------------+-----------------------------------+
 
-Azure East-US and Azure West-Europe are managed by `Microsoft Azure`_. The
-Bregenz region is managed by Crate.io and is located in Austria, Europe.
+Azure East-US2 and Azure West-Europe are managed by `Microsoft Azure`_. The
+Bregenz region is managed by Crate.io and is located in Austria.
 
-Azure East-US is a good default region if you don't know which one to pick.
+Azure East-US2 is a good default region if you don't know which one to pick.
 
 From the Cloud Console homepage, you can sign in using your Cloud Console
-username and password or Microsoft Azure *Active Directory* (AD).
+username and password or using Microsoft Azure *Active Directory* (AD).
 
 If you don't have a Cloud Console account yet, select the sign-in option you
 wish to use. From there, you will be given the option to sign up.
@@ -206,7 +206,8 @@ The cluster overview screen lists the current cluster information:
 
 .. image:: _assets/img/cluster-overview.png
 
-From the main panel, you can visit the cluster `Admin UI`_ at the *Cluster URL*.
+From the main panel, you can visit the cluster `Admin UI`_ at the *Cluster*
+*URL*.
 
 CrateDB clients can also use the *Cluster URL* to connect on port 4200 for
 `HTTP`_  or port 5432 for the `PostgreSQL wire protocol`_. Refer to your client
@@ -214,10 +215,10 @@ documentation for more help.
 
 .. NOTE::
 
-    The *Cluster URL* points to a load-balancer that distributes traffic
+    The *Cluster URL* points to a load balancer that distributes traffic
     internally to the whole CrateDB cluster.
 
-    The load-balancer closes idle connections after four minutes, therefore
+    The load balancer closes idle connections after four minutes, therefore
     client applications that require stateful connections (e.g., JDBC) must be
     be configured to send *keep-alive heartbeat queries*.
 

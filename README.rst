@@ -1,10 +1,10 @@
 ===========================
-CrateDB Cloud Documentation
+CrateDB Cloud How-To Guides
 ===========================
 
 |build-status| |docs|
 
-Documentation for `CrateDB Cloud`_.
+How-To Guides for `CrateDB Cloud`_.
 
 
 Contributing
@@ -40,6 +40,6 @@ Looking for more help?
 .. _Crate.io: http://crate.io/
 .. _CrateDB Cloud: https://crate.io/products/cratedb-cloud/
 .. _developer docs: DEVELOP.rst
-.. _support channels: https://crate.io/support/
+.. _project docs: https://crate.io/docs/cloud/howtos/en/latest
 .. _Sphinx: http://www.sphinx-doc.org/en/master/
-.. _project docs: https://crate.io/docs/cloud/console/en/latest
+.. _support channels: https://crate.io/support/
