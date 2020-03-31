@@ -1,11 +1,14 @@
 .. _overview:
 
-========
-Overview
-========
+================
+Console Overview
+================
 
 The *Cloud Console* is a hosted web administration interface for interacting
-with `CrateDB Cloud`_.
+with `CrateDB Cloud`_. This overview gives you all the basic information for
+using the CrateDB Cloud Console. Refer to individual items in the current
+section of the Documentation for more information on how to perform specific
+operations.
 
 .. rubric:: Table of contents
 
