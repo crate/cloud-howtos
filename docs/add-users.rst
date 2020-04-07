@@ -94,4 +94,4 @@ Restrictions
   they will still have administrative rights in that project.
 
 
-.. _role: https://crate.io/docs/cloud-console/docs/user-roles.rst
+.. _role: https://crate.io/docs/cloud/reference/en/latest/user-roles.html

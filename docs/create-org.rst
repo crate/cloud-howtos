@@ -87,7 +87,7 @@ provide a valid notification email, CrateDB Cloud will send relevant
 operational notifications via email to that address.
 
 
-.. _guide on creating a new project: https://crate.io/docs/cloud-console/docs/create-project.rst
-.. _guide to adding users to organizations and projects: https://crate.io/docs/cloud-console/docs/add-users.rst
-.. _guide to creating projects: https://crate.io/docs/cloud-console/docs/create-project.rst
-.. _guide to user roles in CrateDB Cloud: https://crate.io/docs/cloud-console/docs/user-roles.rst
+.. _guide on creating a new project: https://crate.io/docs/cloud/howtos/en/latest/create-project.html
+.. _guide to adding users to organizations and projects: https://crate.io/docs/cloud/howtos/en/latest/add-users.html
+.. _guide to creating projects: https://crate.io/docs/cloud/howtos/en/latest/create-project.html
+.. _guide to user roles in CrateDB Cloud: https://crate.io/docs/cloud/reference/en/latest/user-roles.html

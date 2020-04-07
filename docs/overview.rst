@@ -23,7 +23,7 @@ Basics
 
 .. image:: _assets/img/start.png
 
-You must access the Cloud Console by `region`_.
+You must access the Cloud Console by |region|.
 
 Available regions:
 
@@ -37,7 +37,7 @@ Available regions:
 | Bregenz           | `bregenz.a1.cratedb.cloud`_       |
 +-------------------+-----------------------------------+
 
-Azure East-US2 and Azure West-Europe are managed by `Microsoft Azure`_. The
+Azure East-US2 and Azure West-Europe are managed by |Microsoft Azure|. The
 Bregenz region is managed by Crate.io and is located in Austria.
 
 Azure East-US2 is a good default region if you don't know which one to pick.
@@ -60,7 +60,7 @@ Account overview
 The account overview screen lists the organizations and projects you can
 access.
 
-If you follow the `getting started`_ instructions and deploy a test cluster,
+If you follow the `tutorial`_ instructions and deploy a test cluster,
 your account overview will look something like this:
 
 .. image:: _assets/img/account-overview.png
@@ -249,9 +249,15 @@ With the *Delete* button, you can delete the current cluster.
 .. _bregenz.a1.cratedb.cloud: https://bregenz.a1.cratedb.cloud/
 .. _CrateDB Cloud: https://crate.io/products/cratedb-cloud/
 .. _eastus2.azure.cratedb.cloud: https://eastus2.azure.cratedb.cloud/
-.. _getting started: https://crate.io/docs/cloud/getting-started/
 .. _HTTP: https://crate.io/docs/crate/reference/en/latest/interfaces/http.html
-.. _Microsoft Azure: https://azure.microsoft.com/en-us/
 .. _PostgreSQL wire protocol: https://crate.io/docs/crate/reference/en/latest/interfaces/postgres.html
-.. _region: https://azure.microsoft.com/en-us/global-infrastructure/regions/
+.. _tutorial: https://crate.io/docs/cloud/tutorials/en/latest/getting-started/index.html
 .. _westeurope.azure.cratedb.cloud: https://westeurope.azure.cratedb.cloud/
+
+.. |Microsoft Azure| raw:: html
+
+    <a href="https://azure.microsoft.com/" target="_blank">Microsoft Azure</a>
+
+.. |region| raw:: html
+
+    <a href="https://azure.microsoft.com/en-us/global-infrastructure/regions/" target="_blank">region</a>

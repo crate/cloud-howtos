@@ -92,4 +92,4 @@ When scaling a cluster, there are some important aspects to keep in mind:
 
 
 .. _Crate DB Documentation: https://crate.io/docs/crate/reference/en/latest/general/ddl/replication.html
-.. _guide on how to deploy a cluster via the Microsoft Azure Marketplace for the first time: https://help.crate.io/en/articles/3603380-how-to-deploy-a-cluster-via-the-azure-marketplace
+.. _guide on how to deploy a cluster via the Microsoft Azure Marketplace for the first time: https://crate.io/docs/cloud/tutorials/en/latest/getting-started/azure-to-cluster/index.html
