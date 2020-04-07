@@ -41,5 +41,5 @@ Documentation for `Croud`_, the CLI for CrateDB Cloud.
 
 
 .. _Croud: https://crate.io/docs/cloud/cli/en/latest/
-.. _Tutorials: https://crate.io/docs/cloud/tutorials/
+.. _Tutorials: https://crate.io/docs/cloud/tutorials/en/latest/
 .. _GitHub: https://github.com/crate/cloud-howtos/

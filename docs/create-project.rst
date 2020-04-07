@@ -87,6 +87,6 @@ A project can be deleted in the Project Settings page by clicking the *Delete*
 button at the top right.
 
 
-.. _guide on how to deploy a cluster via the Azure Marketplace: https://help.crate.io/en/articles/3603380-how-to-deploy-a-cluster-via-the-azure-marketplace
-.. _guide on user roles in CrateDB Cloud: https://crate.io/docs/cloud-console/docs/user-roles.rst
-.. _guide to adding users to organizations and projects: https://crate.io/docs/cloud-console/docs/add-users.rst
+.. _guide on how to deploy a cluster via the Azure Marketplace: https://crate.io/docs/cloud/tutorials/en/latest/getting-started/azure-to-cluster/index.html
+.. _guide on user roles in CrateDB Cloud: https://crate.io/docs/cloud/reference/en/latest/user-roles.html
+.. _guide to adding users to organizations and projects: https://crate.io/docs/cloud/howtos/en/latest/add-users.html
