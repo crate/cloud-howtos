@@ -15,8 +15,8 @@ may be required: see :ref:`Important things to know<scale-cluster-important>`.
 
 .. NOTE::
 
-    Please be aware that as actual cluster usage is billed, scaling your cluster
-    can affect your charges.
+    Please be aware that as actual cluster usage is billed, scaling your
+    cluster can affect your charges.
 
 .. rubric:: Table of contents
 
@@ -29,27 +29,31 @@ may be required: see :ref:`Important things to know<scale-cluster-important>`.
 Find the Cluster Settings page
 ==============================
 
-For scaling your clusters in the Console, you must find the Cluster Settings
-page. When you first access the Console, you will arrive at the Account
-Overview page. The Account Overview page lists all created projects belonging
-to your organization.
+To scale your clusters in the Console, you must find the Cluster Settings page.
+When you first access the Console, you will arrive at the Organization page.
 
-.. image:: _assets/img/account-overview.png
+.. image:: _assets/img/organization-overviewv2.png
 
-To scale a cluster, you need to know what project the cluster belongs to. Click
-on that project's name in the Account Overview page to go to the Project
-Overview page.
+To scale a cluster, you need to know what project the cluster belongs to. Go to
+the Projects page in the left-hand menu to find an overview of all projects
+associated with your organization. Select the one that has the cluster you want
+to scale deployed in it. (Make sure the correct region is selected in the
+dropdown menu at the top left to see the desired projects.)
 
-.. image:: _assets/img/project-overview.png
+In the menu on the left hand you should see below the divider line an icon or
+icons representing all clusters associated with the currently selected project.
+Here, find the correct cluster and click on the icon. It will expand and show
+links for three pages: *Overview*, *Metrics* and *Settings*.
 
-In the Project Overview page, you will see all clusters corresponding to that
-project. Click on the cluster you want to scale to arrive at the Cluster
-Overview page.
+.. image:: _assets/img/cluster-dropdownv2.png
 
-.. image:: _assets/img/cluster-overview.png
+Click on *Settings*. This will take you to the Cluster Settings page, where
+you can see the current scale unit of the cluster, as well as an information
+box for the current cluster plan and tier. To scale the cluster up or down
+within the permitted range, simply click the *Edit scale unit* button at the
+top right.
 
-Now, as a final step, click on Settings in the left hand menu to arrive at the
-Cluster Settings page, where you can scale your cluster.
+.. image:: _assets/img/cluster-settingsv2.png
 
 
 .. _scale-cluster-instructions:
@@ -65,6 +69,8 @@ Secondly, choose the desired scaling value in the radio button menu that
 appears.
 
 Finally, confirm with *Save*.
+
+.. image:: _assets/img/cluster-scale-dropdownv2.png
 
 The values corresponding to each scale unit will vary depending on the plan
 selected for the cluster. This also affects the cluster configuration and
