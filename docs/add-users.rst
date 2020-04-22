@@ -4,8 +4,10 @@
 Add users
 =========
 
-A guide on how to add users to organizations and projects and how to manage
-their privileges.
+This is a quick guide on how to add users to organizations and projects and how
+to manage their privileges. This information can also be found in the CrateDB
+Cloud Console :ref:`overview<overview>` but is presented here separately for
+ease of use.
 
 .. rubric:: Table of contents
 
@@ -24,20 +26,23 @@ they have an existing account, they can be added as a user.
 
 .. _add-users-to-org:
 
-Adding users to an organization
-===============================
+Add users to an organization
+============================
 
-New users can be added to an organization by going to the organization in the
-Console and entering the *Users* menu item.
+New users can be added to an organization by going to the Organization page in
+the Console if you are logged in as organization admin. (For more information
+on user roles and associated privileges, see our Documentation on
+`user roles`_.) At the top, you will see three tabs labelled *Settings*,
+*Users*, and *Audit Log*.
 
-.. image:: _assets/img/addOrganizationMember.png
+.. image:: _assets/img/organization-overviewv2.png
 
-Here you get an overview of all users that are currently in the organization
-including their `role`_.
+Click the *Users* tab to see an overview of all users associated with the
+organization. It will show their username, email, and user role.
 
 To add a new user click the *Add user* button in the top right.
 
-.. image:: _assets/img/addOrganizationUser.png
+.. image:: _assets/img/organization-usersv2.png
 
 First, enter the email address the user signed up with.
 
@@ -45,37 +50,53 @@ Second, select the `role`_ you want to give the user in your organization.
 
 Finally, click *Save*.
 
-To edit a user's role, simply click the pen icon corresponding to that user in
-the user table.
+.. image:: _assets/img/organization-users-dropdownv2.png
 
-.. image:: _assets/img/editOrganizationUser.png
 
-The dropdown menu in the *Role* column lets you change the user's role. Confirm
-the change by clicking the check mark to the right.
+.. _add-users-edit:
+
+Edit and delete users from an organization
+==========================================
+
+You can also edit user roles and delete users in the *Users* tab. To edit a
+user's role, simply click the pen icon corresponding to that user in the user
+table. This will bring up a dropdown menu. To delete a user, use the bin icon.
+
+.. NOTE::
+
+    Note that in this tab you can only set organization user roles, not project
+    user roles. To set project-specific user roles, see below.
 
 
 .. _add-users-to-project:
 
-Adding users to a project
-=========================
+Add users to a project
+======================
 
-For projects the process is similar. In the Console, go to a project and enter
-the *Users* menu item.
+For projects the process is similar. You can add users to a project if you are
+an organization admin or an admin of the relevant project. In the Console, go
+to a project in the *Projects* page overview. You will see a list of all
+projects created within the organization on this page, with name, timestamp of
+creation, project ID, and region of deployment.
 
-Then, click the *Add user* button at the top right.
+.. image:: _assets/img/projectsv2.png
 
-.. image:: _assets/img/addProjectUser.png
+Click on the project you want to add users to to select it. Below the divider
+line in the left-hand menu are shown the project-specific options. Go to the
+*Users* page in this menu. Here, you will see an overview of all users
+associated with the project, as well as their email address and role.
 
-The dropdown list shows users who have been added to the relevant organization.
-From this dropdown menu, select the desired user. Next, assign the user a role
-for this specific project.
+.. image:: _assets/img/project-usersv2.png
+
+To add a user, click the *Add user* button at the top right. Choose a user and
+the project role you want them to have.
+
+.. image:: _assets/img/project-users-dropdownv2.png
 
 Finally, click *Save* to add the user.
 
 To edit a user's role, simply click the pen icon corresponding to that user in
-the user table.
-
-Confirm any changes by clicking the check mark.
+the user table. To delete the user from the project, click the bin icon.
 
 
 .. _restrictions:
@@ -86,12 +107,13 @@ Restrictions
 - An organization needs to have at least one organization admin. It is
   therefore not possible to remove the organization admin if there is only one.
 
-- By contrast, a project does not require a project admin. This is because every
-  organization admin has access to each project of that organization without
-  having to be a member of that project.
+- By contrast, a project does not require a project admin. This is because
+  every organization admin has access to each project of that organization
+  without having to be a member of that project.
 
 - If a user is an organization admin but added as project member to a project,
   they will still have administrative rights in that project.
 
 
 .. _role: https://crate.io/docs/cloud/reference/en/latest/user-roles.html
+.. _user roles: https://crate.io/docs/cloud/reference/en/latest/user-roles.html

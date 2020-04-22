@@ -4,7 +4,12 @@
 Create a new organization
 =========================
 
-A guide on how to create a new organization in the CrateDB Cloud Console.
+This is a guide on how to create a new organization in the CrateDB Cloud
+Console. If you `sign up via Azure`_, you will create an organization as part
+of the signup process via the Console wizard. Currently, clusters can only be
+deployed if you sign up in this way. Should you however access the Console
+otherwise, or have deleted your organization, this guide will inform you on how
+to create one from scratch.
 
 .. rubric:: Table of contents
 
@@ -12,82 +17,53 @@ A guide on how to create a new organization in the CrateDB Cloud Console.
    :local:
 
 
-.. _create-org-account:
+.. _create-org-new:
 
-The Account Overview page
+Create a new organization
 =========================
 
-When you first access the CrateDB Cloud Console, you will arrive at the Account
-Overview page. If you have not previously created an organization, the page
-will display an empty box logo and the message *No organization yet*.
+When you first access the CrateDB Cloud Console, you will arrive at the
+Organization overview page. If there is not currently an active organization,
+the page will display an empty box logo and the message *No organization yet*.
 
-.. image:: _assets/img/account-overview-new.png
+.. image:: _assets/img/create-orgv2.png
 
 Underneath this logo, click the button *Create organization*. A tab will appear
-prompting you to name the organization.
+prompting you to name the organization. Once you have decided on a name, click
+*Create* in the bottom right corner to proceed.
 
-.. image:: _assets/img/create-org.png
+.. image:: _assets/img/create-org-dropdownv2.png
 
-Once you have decided on a name, click *Create* in the bottom right corner to
-proceed. When the organization has been created, you will be returned to the
-Account Overview page, where the organization will now be listed.
+When the organization has been created, you will be returned to the
+Organization page, where the organization will now be listed.
 
 
 .. _create-org-overview:
 
-The Organization Overview page
-==============================
+The Organization page
+=====================
 
-To access the Organization Overview page, click *View* in the top right corner
-of the organization listing in the Account Overview page.
+To access the Organization page, click *Organization* at the top left of the
+left-hand menu in the Console. Here you will see an overview of your
+organization with its name, unique ID, and the email information.
 
-.. image:: _assets/img/account-overview-2.png
+.. image:: _assets/img/organization-overviewv2.png
 
-Here, you will see an overview of all projects and an option to create a new
-project. For more information about creating new projects, see our `guide on
-creating a new project`_.
-
-
-.. _create-org-users:
-
-The Organization Users page
-===========================
-
-In the Organization Users page, you will see all current users along with their
-associated username, email, and role, as well an option to add a user.
-
-.. image:: _assets/img/org-users.png
-
-For more on adding users, see our `guide to adding users to organizations and
+There are also three tabs. The current tab is by default *Settings*. In the
+*Users* tab you can add users to the organization at organization level. For
+more on adding users, see our `guide to adding users to organizations and
 projects`_. To understand roles and role definitions, see our `guide to user
 roles in CrateDB Cloud`_.
 
+The *Audit Log* tab allows the organization admin access to the audit log. For
+more details on these tabs, see the description in our :ref:`Documentation
+<overview-org-overview>`.
 
-.. _create-org-settings:
-
-The Organization Settings page
-==============================
-
-The Organization Settings page lists the organization name, the notification
-email, the notification setting, and the organization ID.
-
-.. image:: _assets/img/org-settings-2.png
-
-At the top right you will find the main buttons to interact with the
-organization. To delete the organization, click *Delete* and verify by typing
-the organization name into the popup tab. Note that in order to delete an
-organization, you must first delete all associated projects.
-
-For more on creating and deleting projects, see our `guide to creating
-projects`_.
-
-The *Edit* button allows you to change the organization name, the notification
-email, and the notification setting. If you set notifications to enabled and
-provide a valid notification email, CrateDB Cloud will send relevant
-operational notifications via email to that address.
+To create a new project within the organization, go to the *Projects* page
+after creating your organization. A description of this process can be found
+:ref:`here<create-project>`.
 
 
-.. _guide on creating a new project: https://crate.io/docs/cloud/howtos/en/latest/create-project.html
 .. _guide to adding users to organizations and projects: https://crate.io/docs/cloud/howtos/en/latest/add-users.html
-.. _guide to creating projects: https://crate.io/docs/cloud/howtos/en/latest/create-project.html
 .. _guide to user roles in CrateDB Cloud: https://crate.io/docs/cloud/reference/en/latest/user-roles.html
+.. _sign up via Azure: https://crate.io/docs/cloud/tutorials/en/latest/getting-started/azure-to-cluster/index.html
