@@ -32,7 +32,7 @@ Find the Cluster Settings page
 To scale your clusters in the Console, you must find the Cluster Settings page.
 When you first access the Console, you will arrive at the Organization page.
 
-.. image:: _assets/img/organization-overviewv2.png
+.. image:: _assets/img/organization-overview.png
 
 To scale a cluster, you need to know what project the cluster belongs to. Go to
 the Projects page in the left-hand menu to find an overview of all projects
@@ -45,7 +45,7 @@ icons representing all clusters associated with the currently selected project.
 Here, find the correct cluster and click on the icon. It will expand and show
 links for three pages: *Overview*, *Metrics* and *Settings*.
 
-.. image:: _assets/img/cluster-dropdownv2.png
+.. image:: _assets/img/cluster-dropdown.png
 
 Click on *Settings*. This will take you to the Cluster Settings page, where
 you can see the current scale unit of the cluster, as well as an information
@@ -53,7 +53,7 @@ box for the current cluster plan and tier. To scale the cluster up or down
 within the permitted range, simply click the *Edit scale unit* button at the
 top right.
 
-.. image:: _assets/img/cluster-settingsv2.png
+.. image:: _assets/img/cluster-settings.png
 
 
 .. _scale-cluster-instructions:
@@ -70,7 +70,7 @@ appears.
 
 Finally, confirm with *Save*.
 
-.. image:: _assets/img/cluster-scale-dropdownv2.png
+.. image:: _assets/img/cluster-scale-dropdown.png
 
 The values corresponding to each scale unit will vary depending on the plan
 selected for the cluster. This also affects the cluster configuration and
@@ -97,5 +97,5 @@ When scaling a cluster, there are some important aspects to keep in mind:
   Documentation`_.
 
 
-.. _CrateDB Documentation: https://crate.io/docs/crate/reference/en/latest/general/ddl/replication.html
+.. _CrateDB   Documentation: https://crate.io/docs/crate/reference/en/latest/general/ddl/replication.html
 .. _guide on how to deploy a cluster via the Microsoft Azure Marketplace for the first time: https://crate.io/docs/cloud/tutorials/en/latest/getting-started/azure-to-cluster/index.html

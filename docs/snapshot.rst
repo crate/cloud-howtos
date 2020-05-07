@@ -41,7 +41,7 @@ indicates the creation and red the deletion of a snapshot repository, while
 white indicates the period of incremental hourly snapshots added to the
 repository.)
 
-.. image:: _assets/img/snapshots-diagram-2.png
+.. image:: _assets/img/snapshots-diagram.png
 
 
 .. _snapshot-restore:
