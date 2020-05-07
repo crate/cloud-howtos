@@ -64,7 +64,7 @@ The Organization page lists the organizations and projects you can access.
 If you follow the `tutorial`_ instructions and deploy a test cluster,
 your organization overview will look something like this:
 
-.. image:: _assets/img/organization-overviewv2.png
+.. image:: _assets/img/organization-overview.png
 
 The Organization screen consists of three tabs: *Settings*, *Users*, and the
 *Audit Log*. By default, it shows the Settings tab, which displays the
@@ -87,7 +87,7 @@ Organization Users
 
 The next tab is the Users tab.
 
-.. image:: _assets/img/organization-usersv2.png
+.. image:: _assets/img/organization-users.png
 
 The Users tab shows the users associated with the organization, as well as
 their user role and their email address. If you are an organization admin, you
@@ -104,7 +104,7 @@ Organization Audit Log
 
 The final tab is the Audit Log tab.
 
-.. image:: _assets/img/organization-audit-logv2.png
+.. image:: _assets/img/organization-audit-log.png
 
 This tab shows the Audit Log. In the Audit Log, a user with the correct
 credentials (`an organization admin`_) can see an overview of logged changes to
@@ -121,7 +121,7 @@ The Projects page shows an overview of all current projects within the
 organization, together with their timestamp of creation, project ID, and region
 of deployment.
 
-.. image:: _assets/img/projectsv2.png
+.. image:: _assets/img/projects.png
 
 The projects are selected by region, so to see projects deployed
 in other regions than the default, use the dropdown menu at the top left. You
@@ -155,7 +155,7 @@ The Project Overview page, below the divider line, shows you the services
 deployed in the currently selected project. The overview panel shows the name,
 type, and SaaS subscription for billing purposes associated with each service.
 
-.. image:: _assets/img/project-overviewv2.png
+.. image:: _assets/img/project-overview.png
 
 Clicking on a cluster service takes you to the Cluster Overview page, which
 bears the name the organization or project admin chose for the cluster. For
@@ -170,7 +170,7 @@ Cluster Overview
 The Cluster Overview page gives a broad range of relevant data for the cluster
 selected.
 
-.. image:: _assets/img/cluster-overviewv2.png
+.. image:: _assets/img/cluster-overview.png
 
 It gives you the following information:
 
@@ -239,7 +239,7 @@ The Cluster Metrics page provides live visualizations of how the cluster is
 functioning. It shows two graph panels: one for the average response time of a
 query (in milliseconds) and one for the total number of queries per second.
 
-.. image:: _assets/img/cluster-metricsv2.png
+.. image:: _assets/img/cluster-metrics.png
 
 The differently colored graphs show the contribution of each type of query to
 the total results displayed in the graph panel. These values can also be read
@@ -254,7 +254,7 @@ Cluster Settings
 On the page for Cluster Settings you get a quick overview of the subscription
 plan configuration of the cluster.
 
-.. image:: _assets/img/cluster-settingsv2.png
+.. image:: _assets/img/cluster-settings.png
 
 The blue box on the left shows the current cluster subscription plan, including
 the tier and the scale unit. The scale unit can also be adjusted on this page.
@@ -278,7 +278,7 @@ Project Users
 The Project Users page shows you a list of all the users who have been added to
 the project, their email address, and their user role.
 
-.. image:: _assets/img/project-usersv2.png
+.. image:: _assets/img/project-users.png
 
 You can edit or delete user data here - if you have the right user permissions
 - by clicking respectively the pen icon and the bin icon. You can also add new
@@ -295,7 +295,7 @@ On the Project Settings page you will see the essential data for your selected
 project. This includes the project name, the project region, and the unique
 project ID.
 
-.. image:: _assets/img/project-settingsv2.png
+.. image:: _assets/img/project-settings.png
 
 In this screen you can delete a project by clicking the *Delete*
 button at the top right. You can also change the project name by clicking the
@@ -316,7 +316,7 @@ The Account page shows the current account you are using to interact with the
 CrateDB Cloud Console. It shows the username as well as the email address
 associated with that username.
 
-.. image:: _assets/img/accountv2.png
+.. image:: _assets/img/account.png
 
 The latter can be edited in this screen by clicking the *Edit* button at the
 top right.

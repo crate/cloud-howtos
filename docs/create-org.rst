@@ -26,13 +26,13 @@ When you first access the CrateDB Cloud Console, you will arrive at the
 Organization overview page. If there is not currently an active organization,
 the page will display an empty box logo and the message *No organization yet*.
 
-.. image:: _assets/img/create-orgv2.png
+.. image:: _assets/img/create-org.png
 
 Underneath this logo, click the button *Create organization*. A tab will appear
 prompting you to name the organization. Once you have decided on a name, click
 *Create* in the bottom right corner to proceed.
 
-.. image:: _assets/img/create-org-dropdownv2.png
+.. image:: _assets/img/create-org-dropdown.png
 
 When the organization has been created, you will be returned to the
 Organization page, where the organization will now be listed.
@@ -47,7 +47,7 @@ To access the Organization page, click *Organization* at the top left of the
 left-hand menu in the Console. Here you will see an overview of your
 organization with its name, unique ID, and the email information.
 
-.. image:: _assets/img/organization-overviewv2.png
+.. image:: _assets/img/organization-overview.png
 
 There are also three tabs. The current tab is by default *Settings*. In the
 *Users* tab you can add users to the organization at organization level. For

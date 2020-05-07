@@ -35,14 +35,14 @@ on user roles and associated privileges, see our Documentation on
 `user roles`_.) At the top, you will see three tabs labelled *Settings*,
 *Users*, and *Audit Log*.
 
-.. image:: _assets/img/organization-overviewv2.png
+.. image:: _assets/img/organization-overview.png
 
 Click the *Users* tab to see an overview of all users associated with the
 organization. It will show their username, email, and user role.
 
 To add a new user click the *Add user* button in the top right.
 
-.. image:: _assets/img/organization-usersv2.png
+.. image:: _assets/img/organization-users.png
 
 First, enter the email address the user signed up with.
 
@@ -50,7 +50,7 @@ Second, select the `role`_ you want to give the user in your organization.
 
 Finally, click *Save*.
 
-.. image:: _assets/img/organization-users-dropdownv2.png
+.. image:: _assets/img/organization-users-dropdown.png
 
 
 .. _add-users-edit:
@@ -79,19 +79,19 @@ to a project in the *Projects* page overview. You will see a list of all
 projects created within the organization on this page, with name, timestamp of
 creation, project ID, and region of deployment.
 
-.. image:: _assets/img/projectsv2.png
+.. image:: _assets/img/projects.png
 
 Click on the project you want to add users to to select it. Below the divider
 line in the left-hand menu are shown the project-specific options. Go to the
 *Users* page in this menu. Here, you will see an overview of all users
 associated with the project, as well as their email address and role.
 
-.. image:: _assets/img/project-usersv2.png
+.. image:: _assets/img/project-users.png
 
 To add a user, click the *Add user* button at the top right. Choose a user and
 the project role you want them to have.
 
-.. image:: _assets/img/project-users-dropdownv2.png
+.. image:: _assets/img/project-users-dropdown.png
 
 Finally, click *Save* to add the user.
 
