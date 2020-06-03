@@ -56,8 +56,7 @@ projects`_. To understand roles and role definitions, see our `guide to user
 roles in CrateDB Cloud`_.
 
 The *Audit Log* tab allows the organization admin access to the audit log. For
-more details on these tabs, see the description in our :ref:`Documentation
-<overview-org-overview>`.
+more details on these tabs, see the description in the Console `Overview`_.
 
 To create a new project within the organization, go to the *Projects* page
 after creating your organization. A description of this process can be found
@@ -66,4 +65,5 @@ after creating your organization. A description of this process can be found
 
 .. _guide to adding users to organizations and projects: https://crate.io/docs/cloud/howtos/en/latest/add-users.html
 .. _guide to user roles in CrateDB Cloud: https://crate.io/docs/cloud/reference/en/latest/user-roles.html
+.. _Overview: https://crate.io/docs/cloud/reference/en/latest/overview.html
 .. _sign up via Azure: https://crate.io/docs/cloud/tutorials/en/latest/getting-started/azure-to-cluster/index.html

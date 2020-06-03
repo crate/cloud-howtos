@@ -6,8 +6,7 @@ Add users
 
 This is a quick guide on how to add users to organizations and projects and how
 to manage their privileges. This information can also be found in the CrateDB
-Cloud Console :ref:`overview<overview>` but is presented here separately for
-ease of use.
+Cloud Console `Overview`_ but is presented here separately for ease of use.
 
 .. rubric:: Table of contents
 
@@ -115,5 +114,6 @@ Restrictions
   they will still have administrative rights in that project.
 
 
+.. _Overview: https://crate.io/docs/cloud/reference/en/latest/overview.html
 .. _role: https://crate.io/docs/cloud/reference/en/latest/user-roles.html
 .. _user roles: https://crate.io/docs/cloud/reference/en/latest/user-roles.html
