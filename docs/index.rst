@@ -32,11 +32,11 @@ Documentation for `Croud`_, the CLI for CrateDB Cloud.
 .. toctree::
     :titlesonly:
 
-    overview
     create-org
     create-project
     add-users
     scale-cluster
+    delete-cluster
     snapshot
 
 
