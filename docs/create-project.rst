@@ -52,7 +52,7 @@ click on that project there to select it. Below the divider line on the
 left-hand menu, the tabs for *Overview*, *Users* and *Settings* will now refer
 to the selected project. For more information on how to interact with the
 project through these pages, see their description in the `Console overview`_
-in our Documentation.
+in our documentation.
 
 
 .. _Console overview: https://crate.io/docs/cloud/howtos/en/latest/overview.html
