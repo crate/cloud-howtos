@@ -94,8 +94,8 @@ When scaling a cluster, there are some important aspects to keep in mind:
   adjusted. This occurs when the desired number of nodes in your cluster is
   lower than the number of copies of a given table (this is the number of
   replicas + 1). For reference on how to do this, see the `CrateDB
-  Documentation`_.
+  documentation`_.
 
 
-.. _CrateDB   Documentation: https://crate.io/docs/crate/reference/en/latest/general/ddl/replication.html
+.. _CrateDB   documentation: https://crate.io/docs/crate/reference/en/latest/general/ddl/replication.html
 .. _guide on how to deploy a cluster via the Microsoft Azure Marketplace for the first time: https://crate.io/docs/cloud/tutorials/en/latest/getting-started/azure-to-cluster/index.html
