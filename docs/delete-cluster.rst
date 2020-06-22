@@ -4,27 +4,41 @@
 Delete a cluster
 ================
 
-In this tutorial, we will explain how to delete a cluster. If you have followed
-the steps of our `tutorial`_ on how to set up a cluster from scratch, you
-should have one running. (If not, refer to that tutorial for instructions.)
-Although the `general documentation`_ for the CrateDB Cloud Console explains
-how you can delete a cluster within the Console specifically, this tutorial
-additionally provides a step-by-step guide for both methods of deleting a
-cluster in order to make the process more transparent and easier to find.
+This is a guide on how to delete a CrateDB Cloud cluster. It consists of two
+parts: one describes the process of deleting a cluster created through
+Microsoft Azure, the other is for a cluster created through AWS. For Azure,
+there are in turn two methods: via the CrateDB Cloud Console and through the
+Azure Portal. Each are outlined in the Azure section.
 
-You have two different ways to delete a cluster once it has been created. The
-first is through the CrateDB Cloud Console itself; the second is via the
-Microsoft Azure SaaS listing. We will describe each process below.
+Although the `general documentation`_ for the CrateDB Cloud Console explains
+how you can delete a cluster specifically within the Console, this tutorial
+provides a step-by-step guide for *all* methods of deleting a CrateDB Cloud
+cluster. This is to make the process more transparent and easier to find and
+use.
 
 .. WARNING::
 
     All cluster data will be lost on deletion. This action cannot be undone.
 
 
-.. _delete-cluster-console:
+.. _delete-cluster-azure:
+
+Microsoft Azure
+===============
+
+If you have followed the steps of our `tutorial`_ on how to set up a cluster
+from scratch via Microsoft Azure, you should have one running. (If not, refer
+to that tutorial for instructions.) If you created your CrateDB Cloud cluster
+via the Microsoft Azure offering, you have two different ways to delete a
+cluster once it has been created. The first is through the CrateDB Cloud
+Console itself; the second is via the Microsoft Azure SaaS listing. We will
+describe each process below.
+
+
+.. _delete-cluster-az-console:
 
 Deleting a cluster via the CrateDB Cloud Console
-================================================
+------------------------------------------------
 
 The easiest and preferred way to delete a cluster is via the CrateDB Cloud
 Console. Make sure you are logged in to the Console with a user that has org
@@ -56,10 +70,10 @@ the top right. It will ask for confirmation; provide it and the cluster will be
 deleted.
 
 
-.. _delete-cluster-azure:
+.. _delete-cluster-az-portal:
 
 Deleting a cluster via the Microsoft Azure Portal
-=================================================
+-------------------------------------------------
 
 As an alternative option, you can also delete a cluster - once deployment has
 been confirmed in the CrateDB Cloud Console - directly via the Microsoft Azure
@@ -91,6 +105,37 @@ need to tick the box). This will take you to a screen with cluster details.
 To delete the cluster, press the *Delete* button at the top right and confirm.
 
 
+.. _delete-cluster-aws:
+
+AWS
+===
+
+You can deploy a cluster on CrateDB Cloud via AWS by subscribing to the offer
+on the `AWS Marketplace`_. The offer will refer you to the CrateDB Cloud wizard
+where you can configure your plan and cluster. Finally, this process will lead
+you to the CrateDB Cloud Console.
+
+To delete a cluster created in this way, you must unsubscribe from the AWS
+Marketplace offer. To do so, go to the AWS Marketplace landing page. Make sure
+you are logged in with the account with which you have subscribed to the offer.
+
+On the landing page, click the big orange button *Manage subscriptions*. This
+will take you to an overview of your AWS Marketplace subscriptions. You should
+see CrateDB Cloud there. Each subscription item has a button labelled *Manage*.
+Click this button for CrateDB Cloud.
+
+You will now see a page with the CrateDB Cloud "pay as you go" offer on it. At
+the top right corner there is a button labelled *Actions*. This generates a
+drop-down menu with various options for interacting with the offer. In this
+menu, click the option *Cancel subscription*.
+
+A warning will appear, stating that cancelling the subscription will not
+terminate your running services. Do not worry: upon receiving a notice of
+cancellation of the subscription, the CrateDB Cloud team will terminate your
+running services for you. Therefore, you can safely cancel your subscription
+at this prompt to delete your cluster.
+
+
 .. _delete-cluster-billing:
 
 Billing
@@ -101,6 +146,7 @@ on a per-hour basis. As soon as the cluster is deleted, nothing further will be
 billed for that cluster.
 
 
+.. _AWS Marketplace: https://aws.amazon.com/marketplace/
 .. _general documentation: https://crate.io/docs/cloud/howtos/en/latest/overview.html
 .. _tutorial: https://crate.io/docs/cloud/tutorials/en/latest/getting-started/azure-to-cluster/index.html
 .. _user roles: https://crate.io/docs/cloud/reference/en/latest/user-roles.html
