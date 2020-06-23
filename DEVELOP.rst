@@ -62,7 +62,7 @@ release version), please contact the `@crate/tech-writing`_ team.
 .. _configured: https://github.com/crate/cloud-howtos/blob/master/.travis.yml
 .. _fswatch: https://github.com/emcrisostomo/fswatch
 .. _Read the Docs: http://readthedocs.org
-.. _ReStructuredText: http://docbuild.sourceforge.net/rst.html
+.. _ReStructuredText: http://docutils.sourceforge.net/rst.html
 .. _Sphinx: http://sphinx-doc.org/
 
 
