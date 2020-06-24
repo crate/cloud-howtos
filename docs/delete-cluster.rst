@@ -20,6 +20,11 @@ use.
 
     All cluster data will be lost on deletion. This action cannot be undone.
 
+.. rubric:: Table of contents
+
+.. contents::
+   :local:
+
 
 .. _delete-cluster-azure:
 
