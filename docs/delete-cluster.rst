@@ -115,7 +115,13 @@ To delete the cluster, press the *Delete* button at the top right and confirm.
 AWS
 ===
 
-You can deploy a cluster on CrateDB Cloud via AWS by subscribing to the offer
+
+.. _delete-cluster-aws-marketplace:
+
+Deleting a cluster via the AWS Marketplace
+------------------------------------------
+
+You can deploy a cluster on CrateDB Cloud via AWS by subscribing to our offer
 on the `AWS Marketplace`_. The offer will refer you to the CrateDB Cloud wizard
 where you can configure your plan and cluster. Finally, this process will lead
 you to the CrateDB Cloud Console.
@@ -151,7 +157,7 @@ on a per-hour basis. As soon as the cluster is deleted, nothing further will be
 billed for that cluster.
 
 
-.. _AWS Marketplace: https://aws.amazon.com/marketplace/
+.. _AWS Marketplace: https://aws.amazon.com/marketplace/pp/B089M4B1ND
 .. _general documentation: https://crate.io/docs/cloud/howtos/en/latest/overview.html
 .. _tutorial: https://crate.io/docs/cloud/tutorials/en/latest/getting-started/azure-to-cluster/index.html
 .. _user roles: https://crate.io/docs/cloud/reference/en/latest/user-roles.html

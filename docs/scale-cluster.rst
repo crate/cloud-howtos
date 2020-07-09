@@ -7,8 +7,7 @@ Scale a cluster
 This guide will provide a quick overview of how to scale your cluster using the
 CrateDB Cloud Console. For the purposes of this guide, it is assumed that you
 have a cluster up and running and can access the Console. If not, please refer
-to the `guide on how to deploy a cluster via the Microsoft Azure Marketplace
-for the first time`_.
+to the `tutorial on how to deploy a cluster for the first time`_.
 
 If you scale your cluster downward rather than upward, special configuration
 may be required: see :ref:`Important things to know<scale-cluster-important>`.
@@ -98,4 +97,4 @@ When scaling a cluster, there are some important aspects to keep in mind:
 
 
 .. _CrateDB   documentation: https://crate.io/docs/crate/reference/en/latest/general/ddl/replication.html
-.. _guide on how to deploy a cluster via the Microsoft Azure Marketplace for the first time: https://crate.io/docs/cloud/tutorials/en/latest/getting-started/azure-to-cluster/index.html
+.. _tutorial on how to deploy a cluster for the first time: https://crate.io/docs/cloud/tutorials/en/latest/cluster-deployment/index.html
