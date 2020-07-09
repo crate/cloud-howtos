@@ -5,11 +5,11 @@ Create a new organization
 =========================
 
 This is a guide on how to create a new organization in the CrateDB Cloud
-Console. If you `sign up via Azure`_, you will create an organization as part
-of the signup process via the Console wizard. Currently, clusters can only be
-deployed if you sign up in this way. Should you however access the Console
-otherwise, or have deleted your organization, this guide will inform you on how
-to create one from scratch.
+Console. If you `follow the cluster deployment tutorial`_, you will create an
+organization as part of the signup process via the Console wizard. Currently,
+clusters can only be deployed if you sign up in this way. Should you, however,
+access the Console otherwise, or have deleted your organization, this guide
+will inform you on how to create one from scratch.
 
 .. rubric:: Table of contents
 
@@ -63,7 +63,7 @@ after creating your organization. A description of this process can be found
 :ref:`here<create-project>`.
 
 
+.. _follow the cluster deployment tutorial: https://crate.io/docs/cloud/tutorials/en/latest/cluster-deployment/index.html
 .. _guide to adding users to organizations and projects: https://crate.io/docs/cloud/howtos/en/latest/add-users.html
 .. _guide to user roles in CrateDB Cloud: https://crate.io/docs/cloud/reference/en/latest/user-roles.html
 .. _Overview: https://crate.io/docs/cloud/reference/en/latest/overview.html
-.. _sign up via Azure: https://crate.io/docs/cloud/tutorials/en/latest/getting-started/azure-to-cluster/index.html

@@ -14,13 +14,15 @@ documentation for `Croud`_, the CLI for CrateDB Cloud.
 .. NOTE::
 
     Not all operations supported by the CrateDB Cloud Console are also
-    available in Croud. Most importantly, currently Cloud clusters can only be
-    deployed via the CrateDB Cloud Console.
+    available via Croud. Most importantly, clusters can only be deployed via
+    the CrateDB Cloud Console.
 
 .. NOTE::
 
     This resource assumes you know the basics. If not, check out the
-    `tutorials`_ section for beginner material.
+    `tutorials`_ section for how to get started. Additionally, the `reference`_
+    section contains a `glossary`_ as well as an `overview`_ of the CrateDB
+    Cloud Console to give you further information.
 
 .. SEEALSO::
 
@@ -41,5 +43,8 @@ documentation for `Croud`_, the CLI for CrateDB Cloud.
 
 
 .. _Croud: https://crate.io/docs/cloud/cli/en/latest/
-.. _tutorials: https://crate.io/docs/cloud/tutorials/en/latest/
 .. _GitHub: https://github.com/crate/cloud-howtos/
+.. _glossary: https://crate.io/docs/cloud/reference/en/latest/glossary.html
+.. _overview: https://crate.io/docs/cloud/reference/en/latest/overview.html
+.. _reference: https://crate.io/docs/cloud/reference/en/latest/
+.. _tutorials: https://crate.io/docs/cloud/tutorials/en/latest/
