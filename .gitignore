@@ -1,6 +1,7 @@
 .build
+.clone
+.crate-docs-build
 .DS_Store
 .env
 .utils
-.clone
 *.lint
