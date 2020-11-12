@@ -58,7 +58,8 @@ should be just one.)
 .. image:: _assets/img/projects.png
 
 Select the relevant project by clicking on it. Make sure the correct region is
-displayed in the regions dropdown menu to see the correct project.
+displayed in the regions dropdown menu to see the correct project, or select
+'All' in the dropdown menu.
 
 Next, we need to display the cluster in question. To do this, we need to access
 the Cluster Settings page in the left-hand sidebar, below the divider line. The
@@ -87,16 +88,18 @@ using the Azure Marketplace, you will already be familiar with it.
 
 To delete a cluster via the Azure Portal, first we must head to the Azure
 Portal |homepage|. Make sure you are logged in with the correct account
-while on this page. If all is well, you should be able to see an overview of
-different possible Azure services at the top of the page. If you have recently
-used a SaaS resource, you should find in this overview the item "Software as a
-Service (SaaS)". If this item is not present in the list, go to the search bar
-at the top (which says *search resources, services, and docs*) and enter "SaaS"
-there. The SaaS item should then appear in the list of results.
+while on this page.
+
+If all is well, you should be able to see a section titled *Azure Services* on
+the landing page. If you have recently used a SaaS resource, you should find in
+this overview the item "Software as a Service (SaaS)". If this item is not
+present in the list, go to the search bar at the top (which says *search
+resources, services, and docs*) and enter "SaaS" there. The SaaS item should
+then appear in the list of results.
 
 .. image:: _assets/img/azureservices.png
 
-Click on this. If you have subscribed to the CrateDB Cloud offer and have
+Click on this icon. If you have subscribed to the CrateDB Cloud offer and have
 deployed a cluster previously, the cluster name should now appear in the list
 of SaaS items.
 
@@ -130,15 +133,24 @@ To delete a cluster created in this way, you must unsubscribe from the AWS
 Marketplace offer. To do so, go to the AWS Marketplace landing page. Make sure
 you are logged in with the account with which you have subscribed to the offer.
 
-On the landing page, click the big orange button *Manage subscriptions*. This
-will take you to an overview of your AWS Marketplace subscriptions. You should
-see CrateDB Cloud there. Each subscription item has a button labelled *Manage*.
-Click this button for CrateDB Cloud.
+On the landing page, find your account name in the top right corner, and in the
+dropdown menu, select *Your Marketplace Software*.
+
+.. image:: _assets/img/aws-marketplace.png
+
+This will take you to an overview of your AWS Marketplace subscriptions. You
+should see CrateDB Cloud there. Each subscription item has a button labelled
+*Manage*. Click this button for CrateDB Cloud.
+
+.. image:: _assets/img/aws-subscriptions.png
 
 You will now see a page with the CrateDB Cloud "pay as you go" offer on it. At
-the top right corner there is a button labelled *Actions*. This generates a
-drop-down menu with various options for interacting with the offer. In this
-menu, click the option *Cancel subscription*.
+the top right corner there is a button labelled *Actions*.
+
+.. image:: _assets/img/aws-cratedbcloud.png
+
+This generates a drop-down menu with various options for interacting with the
+offer. In this menu, click the option *Cancel subscription*.
 
 A warning will appear, stating that cancelling the subscription will not
 terminate your running services. Do not worry: upon receiving a notice of

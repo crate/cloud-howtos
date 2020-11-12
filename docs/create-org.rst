@@ -28,14 +28,11 @@ the page will display an empty box logo and the message *No organization yet*.
 
 .. image:: _assets/img/create-org.png
 
-Underneath this logo, click the button *Create organization*. A tab will appear
-prompting you to name the organization. Once you have decided on a name, click
-*Create* in the bottom right corner to proceed.
-
-.. image:: _assets/img/create-org-dropdown.png
+In order to create an organization, fill out the organization name in the space
+provided, and click *Create organization*.
 
 When the organization has been created, you will be returned to the
-Organization page, where the organization will now be listed.
+Organization page, where it will now be listed.
 
 
 .. _create-org-overview:
@@ -45,13 +42,18 @@ The Organization page
 
 To access the Organization page, click *Organization* at the top left of the
 left-hand menu in the Console. Here you will see an overview of your
-organization with its name, unique ID, and the email information.
+organization, further subscription options, and any deployed clusters.
 
 .. image:: _assets/img/organization-overview.png
 
-There are also three tabs. The current tab is by default *Settings*. In the
-*Users* tab you can add users to the organization at organization level. For
-more on adding users, see our `guide to adding users to organizations and
+The current tab is by default *Subscriptions*. There are also three further
+tabs.
+
+In the *Settings* tab you see the organization name, unique ID, and
+notification settings.
+
+In the *Users* tab you can add users to the organization at organization level.
+For more on adding users, see our `guide to adding users to organizations and
 projects`_. To understand roles and role definitions, see our `guide to user
 roles in CrateDB Cloud`_.
 
