@@ -19,7 +19,7 @@ The Organization page
 
 When you first access the CrateDB Cloud Console, you will arrive at the
 Organization overview page. This page displays your organization with the name
-you selected, the notification info, and the organization ID.
+you selected, further subscription options, and any deployed clusters.
 
 .. image:: _assets/img/organization-overview.png
 
