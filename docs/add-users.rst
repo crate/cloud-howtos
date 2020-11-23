@@ -30,9 +30,9 @@ Add users to an organization
 
 New users can be added to an organization by going to the Organization page in
 the Console if you are logged in as organization admin. (For more information
-on user roles and associated privileges, see our documentation on
-`user roles`_.) At the top, you will see three tabs labelled *Settings*,
-*Users*, and *Audit Log*.
+on user roles and associated privileges, see our documentation on `user
+roles`_.) At the top, you will see four tabs labelled *Subscriptions*,
+*Settings*, *Users*, and *Audit Log*.
 
 .. image:: _assets/img/organization-overview.png
 
