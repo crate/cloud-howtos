@@ -86,8 +86,8 @@ been confirmed in the CrateDB Cloud Console - directly via the Microsoft Azure
 Portal. If you followed the `tutorial`_ on deploying a cluster from scratch
 using the Azure Marketplace, you will already be familiar with it.
 
-To delete a cluster via the Azure Portal, first we must head to the Azure
-Portal |homepage|. Make sure you are logged in with the correct account
+To delete a cluster via the Azure Portal, first we must head to the `Azure
+Portal homepage`_. Make sure you are logged in with the correct account
 while on this page.
 
 If all is well, you should be able to see a section titled *Azure Services* on
@@ -170,9 +170,7 @@ billed for that cluster.
 
 
 .. _AWS Marketplace: https://aws.amazon.com/marketplace/pp/B089M4B1ND
+.. _Azure Portal homepage: https://portal.azure.com/#home
 .. _general documentation: https://crate.io/docs/cloud/howtos/en/latest/overview.html
 .. _tutorial: https://crate.io/docs/cloud/tutorials/en/latest/getting-started/azure-to-cluster/index.html
 .. _user roles: https://crate.io/docs/cloud/reference/en/latest/user-roles.html
-.. |homepage| raw:: html
-
-    <a href="https://portal.azure.com/#home" target="_blank">homepage</a>
