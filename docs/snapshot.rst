@@ -20,8 +20,7 @@ handles snapshots can be found in the `CrateDB documentation`_.
 CrateDB Cloud's backup policy
 =============================
 
-CrateDB Cloud takes *hourly snapshots* which are kept for *14 days*. After that
-time snapshots will be deleted.
+CrateDB Cloud takes *hourly snapshots* which are kept for *14 days*.
 
 
 .. _snapshot-restore:
