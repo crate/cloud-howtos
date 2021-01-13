@@ -56,6 +56,7 @@ an overview of all projects. (If you followed the previous tutorial, there
 should be just one.)
 
 .. image:: _assets/img/projects.png
+   :alt: Cloud Console projects overview
 
 Select the relevant project by clicking on it. Make sure the correct region is
 displayed in the regions dropdown menu to see the correct project, or select
@@ -69,6 +70,7 @@ the one we want. Clicking this will lead to the Cluster Settings page for the
 cluster.
 
 .. image:: _assets/img/cluster-settings.png
+   :alt: Cloud Console cluster settings
 
 On this page, you will see size and scaling information for the cluster in
 question. You can delete the cluster here as well. Simply click the bin icon at
@@ -98,17 +100,20 @@ resources, services, and docs*) and enter "SaaS" there. The SaaS item should
 then appear in the list of results.
 
 .. image:: _assets/img/azureservices.png
+   :alt: Azure Portal services menu
 
 Click on this icon. If you have subscribed to the CrateDB Cloud offer and have
 deployed a cluster previously, the cluster name should now appear in the list
 of SaaS items.
 
 .. image:: _assets/img/azuresaas.png
+   :alt: Azure Portal SaaS subscriptions list
 
 All that remains is to click directly on the relevant cluster name (you do not
 need to tick the box). This will take you to a screen with cluster details.
 
 .. image:: _assets/img/azuresaasdetails.png
+   :alt: Azure Portal SaaS cluster details
 
 To delete the cluster, press the *Delete* button at the top right and confirm.
 
@@ -137,17 +142,20 @@ On the landing page, find your account name in the top right corner, and in the
 dropdown menu, select *Your Marketplace Software*.
 
 .. image:: _assets/img/aws-marketplace.png
+   :alt: AWS Marketplace landing page
 
 This will take you to an overview of your AWS Marketplace subscriptions. You
 should see CrateDB Cloud there. Each subscription item has a button labelled
 *Manage*. Click this button for CrateDB Cloud.
 
 .. image:: _assets/img/aws-subscriptions.png
+   :alt: AWS Marketplace subscription management page
 
 You will now see a page with the CrateDB Cloud "pay as you go" offer on it. At
 the top right corner there is a button labelled *Actions*.
 
 .. image:: _assets/img/aws-cratedbcloud.png
+   :alt: AWS Marketplace subscription CrateDB Cloud
 
 This generates a drop-down menu with various options for interacting with the
 offer. In this menu, click the option *Cancel subscription*.

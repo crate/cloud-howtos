@@ -35,6 +35,7 @@ roles`_.) At the top, you will see four tabs labelled *Subscriptions*,
 *Settings*, *Users*, and *Audit Log*.
 
 .. image:: _assets/img/organization-overview.png
+   :alt: Cloud Console organization overview
 
 Click the *Users* tab to see an overview of all users associated with the
 organization. It will show their username, email, and user role.
@@ -42,6 +43,7 @@ organization. It will show their username, email, and user role.
 To add a new user click the *Add user* button in the top right.
 
 .. image:: _assets/img/organization-users.png
+   :alt: Cloud Console organization overview users tab
 
 First, enter the email address the user signed up with.
 
@@ -50,6 +52,7 @@ Second, select the `role`_ you want to give the user in your organization.
 Finally, click *Save*.
 
 .. image:: _assets/img/organization-users-dropdown.png
+   :alt: Cloud Console org add user dropdown menu
 
 
 .. _add-users-edit:
@@ -79,6 +82,7 @@ projects created within the organization on this page, with name, timestamp of
 creation, project ID, and region of deployment.
 
 .. image:: _assets/img/projects.png
+   :alt: Cloud Console projects overview
 
 Click on the project you want to add users to to select it. Below the divider
 line in the left-hand menu are shown the project-specific options. Go to the
@@ -86,11 +90,13 @@ line in the left-hand menu are shown the project-specific options. Go to the
 associated with the project, as well as their email address and role.
 
 .. image:: _assets/img/project-users.png
+   :alt: Cloud Console users overview
 
 To add a user, click the *Add user* button at the top right. Choose a user and
 the project role you want them to have.
 
 .. image:: _assets/img/project-users-dropdown.png
+   :alt: Cloud Console project add user dropdown menu
 
 Finally, click *Save* to add the user.
 

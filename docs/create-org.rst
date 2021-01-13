@@ -27,6 +27,7 @@ Organization overview page. If there is not currently an active organization,
 the page will display an empty box logo and the message *No organization yet*.
 
 .. image:: _assets/img/create-org.png
+   :alt: Cloud Console org overview without organization
 
 In order to create an organization, fill out the organization name in the space
 provided, and click *Create organization*.
@@ -45,6 +46,7 @@ left-hand menu in the Console. Here you will see an overview of your
 organization, further subscription options, and any deployed clusters.
 
 .. image:: _assets/img/organization-overview.png
+   :alt: Cloud Console organization overview
 
 The current tab is by default *Subscriptions*. There are also three further
 tabs.

@@ -32,6 +32,7 @@ To scale your clusters in the Console, you must find the Cluster Settings page.
 When you first access the Console, you will arrive at the Organization page.
 
 .. image:: _assets/img/organization-overview.png
+   :alt: Cloud Console organization overview
 
 To scale a cluster, you need to know what project the cluster belongs to. Go to
 the Projects page in the left-hand menu to find an overview of all projects
@@ -45,6 +46,7 @@ Here, find the correct cluster and click on the icon. It will expand and show
 links for three pages: *Overview*, *Metrics* and *Settings*.
 
 .. image:: _assets/img/cluster-dropdown.png
+   :alt: Cloud Console projects cluster selection
 
 Click on *Settings*. This will take you to the Cluster Settings page, where
 you can see the current scale unit of the cluster, as well as an information
@@ -53,6 +55,7 @@ within the permitted range, simply click the *Edit scale unit* button at the
 top right.
 
 .. image:: _assets/img/cluster-settings.png
+   :alt: Cloud Console cluster settings
 
 
 .. _scale-cluster-instructions:
@@ -70,6 +73,7 @@ appears.
 Finally, confirm with *Save*.
 
 .. image:: _assets/img/cluster-scale-dropdown.png
+   :alt: Cloud Console cluster settings scaling menu
 
 The values corresponding to each scale unit will vary depending on the plan
 selected for the cluster. This also affects the cluster configuration and
