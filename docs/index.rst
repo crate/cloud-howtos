@@ -32,6 +32,7 @@ documentation for `Croud`_, the CLI for CrateDB Cloud.
 .. rubric:: Table of contents
 
 .. toctree::
+    :maxdepth: 2
     :titlesonly:
 
     create-org
