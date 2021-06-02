@@ -135,8 +135,8 @@ where you can configure your plan and cluster. Finally, this process will lead
 you to the CrateDB Cloud Console.
 
 To delete a cluster created in this way, you must unsubscribe from the AWS
-Marketplace offer. To do so, go to the AWS Marketplace landing page. Make sure
-you are logged in with the account with which you have subscribed to the offer.
+Marketplace offer. To do so, go to the AWS Marketplace website and make sure
+you are logged in with the account that you used to subscribe to the offer.
 
 On the landing page, find your account name in the top right corner, and in the
 dropdown menu, select *Your Marketplace Software*.
