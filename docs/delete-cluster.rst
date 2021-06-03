@@ -10,11 +10,11 @@ Microsoft Azure, the other is for a cluster created through AWS. For Azure,
 there are in turn two methods: via the CrateDB Cloud Console and through the
 Azure Portal. Each are outlined in the Azure section.
 
-Although the `general documentation`_ for the CrateDB Cloud Console explains
-how you can delete a cluster specifically within the Console, this tutorial
-provides a step-by-step guide for *all* methods of deleting a CrateDB Cloud
-cluster. This is to make the process more transparent and easier to find and
-use.
+Although the :ref:`general documentation <cloud-reference:overview>` for the
+CrateDB Cloud Console explains how you can delete a cluster specifically
+within the Console, this tutorial provides a step-by-step guide for *all*
+methods of deleting a CrateDB Cloud cluster. This is to make the process more
+transparent and easier to find and use.
 
 .. WARNING::
 
@@ -31,9 +31,9 @@ use.
 Microsoft Azure
 ===============
 
-If you have followed the steps of our `tutorial`_ on how to set up a cluster
-from scratch via Microsoft Azure, you should have one running. (If not, refer
-to that tutorial for instructions.) If you created your CrateDB Cloud cluster
+If you have followed the steps of our :ref:`tutorial on how to set up a cluster
+from scratch via Microsoft Azure <cloud-tutorials:deploy-to-cluster-azure>`,
+you should have one running. If you created your CrateDB Cloud cluster
 via the Microsoft Azure offering, you have two different ways to delete a
 cluster once it has been created. The first is through the CrateDB Cloud
 Console itself; the second is via the Microsoft Azure SaaS listing. We will
@@ -47,13 +47,13 @@ Deleting a cluster via the CrateDB Cloud Console
 
 The easiest and preferred way to delete a cluster is via the CrateDB Cloud
 Console. Make sure you are logged in to the Console with a user that has org
-admin access. (For more on what that means, please see our documentation on
-`user roles`_.)
+admin access. For more on what that means, please see our documentation on
+:ref:`user roles <cloud-reference:user-roles>`.
 
 In the Console, first we have to select the correct project within which the
 cluster was deployed. To do this, go to the Projects page. Here you will see
-an overview of all projects. (If you followed the previous tutorial, there
-should be just one.)
+an overview of all projects. If you followed the previous tutorial, there
+should be just one.
 
 .. image:: _assets/img/projects.png
    :alt: Cloud Console projects overview
@@ -85,8 +85,8 @@ Deleting a cluster via the Microsoft Azure Portal
 
 As an alternative option, you can also delete a cluster - once deployment has
 been confirmed in the CrateDB Cloud Console - directly via the Microsoft Azure
-Portal. If you followed the `tutorial`_ on deploying a cluster from scratch
-using the Azure Marketplace, you will already be familiar with it.
+Portal. If you followed the previous tutorial on deploying a cluster from
+scratch using the Azure Marketplace, you will already be familiar with it.
 
 To delete a cluster via the Azure Portal, first we must head to the `Azure
 Portal homepage`_. Make sure you are logged in with the correct account
@@ -178,7 +178,4 @@ billed for that cluster.
 
 
 .. _AWS Marketplace: https://aws.amazon.com/marketplace/pp/B089M4B1ND
-.. _Azure Portal homepage: https://portal.azure.com/#home
-.. _general documentation: https://crate.io/docs/cloud/howtos/en/latest/overview.html
-.. _tutorial: https://crate.io/docs/cloud/tutorials/en/latest/getting-started/azure-to-cluster/index.html
-.. _user roles: https://crate.io/docs/cloud/reference/en/latest/user-roles.html
+.. _Azure Portal homepage: https://portal.azure.com/

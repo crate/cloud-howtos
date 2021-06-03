@@ -7,7 +7,8 @@ Restore backups and snapshots
 This short guide explains in general terms the CrateDB Cloud backup policy for
 automatically generating snapshots of the cluster data and how one can use such
 snapshots to restore data. A more detailed technical discussion of how CrateDB
-handles snapshots can be found in the `CrateDB documentation`_.
+handles snapshots can be found in the CrateDB documentation about
+:ref:`snapshots <crate-reference:snapshot-restore>`.
 
 .. rubric:: Table of contents
 
@@ -34,10 +35,8 @@ that snapshot was created.
 
 You can restore a snapshot in two ways. One option is to `contact CrateDB Cloud
 support`_. We are happy to assist. Alternatively, you can use the CrateDB Admin
-UI to do it yourself. Please refer to the `reference`_ in the documentation for
-assistance.
+UI to do it yourself. Please refer to the :ref:`reference documentation about
+snapshots <crate-reference:snapshot-restore>` for assistance.
 
 
 .. _contact CrateDB Cloud support: https://help.crate.io/en/
-.. _CrateDB documentation: https://crate.io/docs/crate/reference/en/latest/admin/snapshots.html
-.. _reference: https://crate.io/docs/crate/reference/en/latest/admin/snapshots.html#restore

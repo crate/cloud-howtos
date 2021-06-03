@@ -5,7 +5,8 @@ Create a new organization
 =========================
 
 This is a guide on how to create a new organization in the CrateDB Cloud
-Console. If you `follow the cluster deployment tutorial`_, you will create an
+Console. If you follow the :ref:`cluster deployment tutorial
+<cloud-tutorials:cluster-deployment>`, you will create an
 organization as part of the signup process via the Console wizard. Currently,
 clusters can only be deployed if you sign up in this way. Should you, however,
 access the Console otherwise, or have deleted your organization, this guide
@@ -55,19 +56,14 @@ In the *Settings* tab you see the organization name, unique ID, and
 notification settings.
 
 In the *Users* tab you can add users to the organization at organization level.
-For more on adding users, see our `guide to adding users to organizations and
-projects`_. To understand roles and role definitions, see our `guide to user
-roles in CrateDB Cloud`_.
+For more on adding users, see our :ref:`guide to adding users to organizations
+and projects <add-users>`. To understand roles and role definitions, see our
+:ref:`guide to user roles in CrateDB Cloud <cloud-reference:overview>`.
 
 The *Audit Log* tab allows the organization admin access to the audit log. For
-more details on these tabs, see the description in the Console `Overview`_.
+more details on these tabs, see the description in the
+:ref:`cloud-reference:overview`.
 
 To create a new project within the organization, go to the *Projects* page
 after creating your organization. A description of this process can be found
-:ref:`here<create-project>`.
-
-
-.. _follow the cluster deployment tutorial: https://crate.io/docs/cloud/tutorials/en/latest/cluster-deployment/index.html
-.. _guide to adding users to organizations and projects: https://crate.io/docs/cloud/howtos/en/latest/add-users.html
-.. _guide to user roles in CrateDB Cloud: https://crate.io/docs/cloud/reference/en/latest/user-roles.html
-.. _Overview: https://crate.io/docs/cloud/reference/en/latest/overview.html
+:ref:`here <create-project>`.

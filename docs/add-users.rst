@@ -6,7 +6,8 @@ Add users
 
 This is a quick guide on how to add users to organizations and projects and how
 to manage their privileges. This information can also be found in the CrateDB
-Cloud Console `Overview`_ but is presented here separately for ease of use.
+Cloud Console :ref:`Overview <cloud-reference:overview>` but is presented here
+separately for ease of use.
 
 .. rubric:: Table of contents
 
@@ -30,9 +31,9 @@ Add users to an organization
 
 New users can be added to an organization by going to the Organization page in
 the Console if you are logged in as organization admin. (For more information
-on user roles and associated privileges, see our documentation on `user
-roles`_.) At the top, you will see four tabs labelled *Subscriptions*,
-*Settings*, *Users*, and *Audit Log*.
+on user roles and associated privileges, see our documentation on :ref:`user
+roles <cloud-reference:user-roles>`.) At the top, you will see four tabs
+labelled *Subscriptions*, *Settings*, *Users*, and *Audit Log*.
 
 .. image:: _assets/img/organization-overview.png
    :alt: Cloud Console organization overview
@@ -47,7 +48,8 @@ To add a new user click the *Add user* button in the top right.
 
 First, enter the email address the user signed up with.
 
-Second, select the `role`_ you want to give the user in your organization.
+Second, select the :ref:`role <cloud-reference:user-roles>` you want to give
+the user in your organization.
 
 Finally, click *Save*.
 
@@ -118,8 +120,3 @@ Restrictions
 
 - If a user is an organization admin but added as project member to a project,
   they will still have administrative rights in that project.
-
-
-.. _Overview: https://crate.io/docs/cloud/reference/en/latest/overview.html
-.. _role: https://crate.io/docs/cloud/reference/en/latest/user-roles.html
-.. _user roles: https://crate.io/docs/cloud/reference/en/latest/user-roles.html
