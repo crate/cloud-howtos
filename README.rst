@@ -2,6 +2,9 @@
 CrateDB Cloud How-To Guides
 ===========================
 
+|ci| |rtd| |build|
+
+
 How-to guides for `CrateDB Cloud`_.
 
 
@@ -30,3 +33,17 @@ Looking for more help?
 .. _project docs: https://crate.io/docs/cloud/howtos/en/latest
 .. _Sphinx: http://www.sphinx-doc.org/en/master/
 .. _support channels: https://crate.io/support/
+
+
+.. |ci| image:: https://github.com/crate/cloud-howtos/actions/workflows/docs.yml/badge.svg
+    :alt: CI status
+    :scale: 100%
+    :target: https://github.com/crate/cloud-howtos/actions/workflows/docs.yml
+
+.. |rtd| image:: https://readthedocs.org/projects/crate-cloud-howtos/badge/?version=latest
+    :alt: Read The Docs status
+    :target: https://readthedocs.org/projects/crate-cloud-howtos
+
+.. |build| image:: https://img.shields.io/endpoint.svg?color=blue&url=https%3A%2F%2Fraw.githubusercontent.com%2Fcrate%2Fcloud-howtos%2Fmaster%2Fdocs%2Fbuild.json
+    :alt: Build version
+    :target: https://github.com/crate/cloud-howtos/blob/master/docs/build.json

@@ -7,10 +7,11 @@ Scale a cluster
 This guide will provide a quick overview of how to scale your cluster using the
 CrateDB Cloud Console. For the purposes of this guide, it is assumed that you
 have a cluster up and running and can access the Console. If not, please refer
-to the `tutorial on how to deploy a cluster for the first time`_.
+to the :ref:`tutorial on how to deploy a cluster for the first time
+<cloud-tutorials:cluster-deployment>`.
 
 If you scale your cluster downward rather than upward, special configuration
-may be required: see :ref:`Important things to know<scale-cluster-important>`.
+may be required: see :ref:`Important things to know <scale-cluster-important>`.
 
 .. NOTE::
 
@@ -37,8 +38,8 @@ When you first access the Console, you will arrive at the Organization page.
 To scale a cluster, you need to know what project the cluster belongs to. Go to
 the Projects page in the left-hand menu to find an overview of all projects
 associated with your organization. Select the one that has the cluster you want
-to scale deployed in it. (Make sure the correct region is selected in the
-dropdown menu at the top left to see the desired projects.)
+to scale deployed in it. Please make sure the correct region is selected in the
+dropdown menu at the top left to see the desired projects.
 
 In the menu on the left hand you should see below the divider line an icon or
 icons representing all clusters associated with the currently selected project.
@@ -96,9 +97,5 @@ When scaling a cluster, there are some important aspects to keep in mind:
 - When scaling a cluster *downward*, the number of replicas may need to be
   adjusted. This occurs when the desired number of nodes in your cluster is
   lower than the number of copies of a given table (this is the number of
-  replicas + 1). For reference on how to do this, see the `CrateDB
-  documentation`_.
-
-
-.. _CrateDB   documentation: https://crate.io/docs/crate/reference/en/latest/general/ddl/replication.html
-.. _tutorial on how to deploy a cluster for the first time: https://crate.io/docs/cloud/tutorials/en/latest/cluster-deployment/index.html
+  replicas + 1). For reference on how to do this, see the CrateDB
+  documentation about :ref:`replication <crate-reference:replication>`.
