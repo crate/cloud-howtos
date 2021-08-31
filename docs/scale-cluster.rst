@@ -98,4 +98,4 @@ When scaling a cluster, there are some important aspects to keep in mind:
   adjusted. This occurs when the desired number of nodes in your cluster is
   lower than the number of copies of a given table (this is the number of
   replicas + 1). For reference on how to do this, see the CrateDB
-  documentation about :ref:`replication <crate-reference:replication>`.
+  documentation about :ref:`replication <crate-reference:ddl-replication>`.
