@@ -16,12 +16,10 @@ separately for ease of use.
 
 In CrateDB Cloud you can add team members to your organizations and projects.
 In order to add a user, they must first have signed up for CrateDB Cloud. Once
-they have an existing account, they can be added as a user.
-
-.. NOTE::
-
-    You cannot add a user to an organization if that user is already a part of
-    another organization.
+they have an existing account, they can be added as a user. Users can be
+members or admins of more than one organization at a time, but every
+organization must have at least one organization admin (see also Restrictions
+below).
 
 
 .. _add-users-to-org:
@@ -29,11 +27,11 @@ they have an existing account, they can be added as a user.
 Add users to an organization
 ============================
 
-New users can be added to an organization by going to the Organization page in
-the Console if you are logged in as organization admin. (For more information
-on user roles and associated privileges, see our documentation on :ref:`user
-roles <cloud-reference:user-roles>`.) At the top, you will see four tabs
-labelled *Subscriptions*, *Settings*, *Users*, and *Audit Log*.
+New users can be added to an organization by going to the Organization overview
+page in the Console if you are logged in as organization admin. (For more
+information on user roles and associated privileges, see our documentation on
+:ref:`user roles <cloud-reference:user-roles>`.) At the top, you will see seven
+tabs.
 
 .. image:: _assets/img/organization-overview.png
    :alt: Cloud Console organization overview
@@ -55,6 +53,11 @@ Finally, click *Save*.
 
 .. image:: _assets/img/organization-users-dropdown.png
    :alt: Cloud Console org add user dropdown menu
+
+A user who is a member of more than one organization can at any time switch
+between organizations by using the dropdown menu at the top right of the
+Organization overview screen. For a detailed overview of all the Organization
+tabs, refer to our `Console overview`_.
 
 
 .. _add-users-edit:
@@ -120,3 +123,6 @@ Restrictions
 
 - If a user is an organization admin but added as project member to a project,
   they will still have administrative rights in that project.
+
+
+.. _Console overview: https://crate.io/docs/cloud/reference/en/latest/overview.html

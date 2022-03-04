@@ -8,9 +8,9 @@ This is a guide on how to create a new organization in the CrateDB Cloud
 Console. If you follow the :ref:`cluster deployment tutorial
 <cloud-tutorials:cluster-deployment>`, you will create an
 organization as part of the signup process via the Console wizard. Currently,
-clusters can only be deployed if you sign up in this way. Should you, however,
-access the Console otherwise, or have deleted your organization, this guide
-will inform you on how to create one from scratch.
+clusters can only be deployed by this method. Should you, however, access the
+Console without following this method, or have deleted your organization, this
+guide will inform you on how to create one from scratch.
 
 .. rubric:: Table of contents
 
@@ -42,8 +42,8 @@ Organization page, where it will now be listed.
 The Organization page
 =====================
 
-To access the Organization page, click *Organization* at the top left of the
-left-hand menu in the Console. Here you will see an overview of your
+To access the Organization overview page, click *Organization* at the top left
+of the left-hand menu in the Console. Here you will see an overview of your
 organization, further subscription options, and any deployed clusters.
 
 .. image:: _assets/img/organization-overview.png
