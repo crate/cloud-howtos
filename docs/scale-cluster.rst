@@ -24,12 +24,12 @@ may be required: see :ref:`Important things to know <scale-cluster-important>`.
    :local:
 
 
-.. _scale-cluster-settings:
+.. _scale-cluster-preferences:
 
-Find the Cluster Settings page
-==============================
+Find the Cluster Preferences page
+=================================
 
-To scale your clusters in the Console, you must find the Cluster Settings page.
+To scale your clusters in the Console, you must find the Cluster Preferences page.
 When you first access the Console, you will arrive at the Organization page.
 
 .. image:: _assets/img/organization-overview.png
@@ -44,19 +44,25 @@ dropdown menu at the top left to see the desired projects.
 In the menu on the left hand you should see below the divider line an icon or
 icons representing all clusters associated with the currently selected project.
 Here, find the correct cluster and click on the icon. It will expand and show
-links for three pages: *Overview*, *Metrics* and *Settings*.
+links for four pages: *Overview*, *Backups*, *Metrics* and *Preferences*.
 
 .. image:: _assets/img/cluster-dropdown.png
    :alt: Cloud Console projects cluster selection
 
-Click on *Settings*. This will take you to the Cluster Settings page, where
-you can see the current scale unit of the cluster, as well as an information
-box for the current cluster plan and tier. To scale the cluster up or down
-within the permitted range, simply click the *Edit scale unit* button at the
-top right.
+Click on *Preferences*. This will take you to Cluster access page, where you
+can see and edit your credentials. You can also enable Deletion protection 
+of your cluster and create Whitelist of IP addresses or CIDR blocks that are
+allowed to connect to the cluster. 
 
-.. image:: _assets/img/cluster-settings.png
-   :alt: Cloud Console cluster settings
+.. image:: _assets/img/cluster-access.png
+   :alt: Cloud Console cluster access settings
+
+To edit Cluster scale, click on *Cluster scale* in the top bar. This will take
+you to a page where you can see overview of your Cluster plan as well as 
+current cluster configuration.
+
+.. image:: _assets/img/cluster-preferences.png
+   :alt: Cloud Console cluster preferences
 
 
 .. _scale-cluster-instructions:
@@ -64,12 +70,12 @@ top right.
 Scale a cluster
 ===============
 
-Once arrived at the Cluster Settings page, you can scale the cluster you
-selected in three steps. First, click the *Edit scale unit* button in the top
-right.
+Once arrived at the Cluster scale page, you can scale the cluster you
+selected in three steps. First, click the *Edit cluster configuration* button
+in the top right.
 
-Secondly, choose the desired scaling value in the radio button menu that
-appears.
+Secondly, choose the desired scaling value in either the *Storage* or
+*Choose number of nodes* sections.
 
 Finally, confirm with *Save*.
 
@@ -79,7 +85,8 @@ Finally, confirm with *Save*.
 The values corresponding to each scale unit will vary depending on the plan
 selected for the cluster. This also affects the cluster configuration and
 pricing. A warning will appear to remind the user that changing scale settings
-will be reflected in the charges billed.
+will be reflected in the charges billed. You will be able to see the new
+prices of *Compute* and *Storage* in the bottom right.
 
 
 .. _scale-cluster-important:
