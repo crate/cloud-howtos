@@ -29,7 +29,7 @@ may be required: see :ref:`Important things to know <scale-cluster-important>`.
 Find the Cluster Preferences page
 =================================
 
-To scale your clusters in the Console, you must find the Cluster Preferences page.
+To scale your clusters in the Console, navigate to the Cluster Preferences page.
 When you first access the Console, you will arrive at the Organization page.
 
 .. image:: _assets/img/organization-overview.png
@@ -49,16 +49,16 @@ links for four pages: *Overview*, *Backups*, *Metrics* and *Preferences*.
 .. image:: _assets/img/cluster-dropdown.png
    :alt: Cloud Console projects cluster selection
 
-Click on *Preferences*. This will take you to Cluster access page, where you
-can see and edit your credentials. You can also enable Deletion protection 
-of your cluster and create Whitelist of IP addresses or CIDR blocks that are
+Click on *Preferences*. This will take you to cluster access page, where you
+can see and edit your credentials. You can also enable deletion protection 
+of your cluster and create a whitelist of IP addresses or CIDR blocks that are
 allowed to connect to the cluster. 
 
 .. image:: _assets/img/cluster-access.png
    :alt: Cloud Console cluster access settings
 
-To edit Cluster scale, click on *Cluster scale* in the top bar. This will take
-you to a page where you can see overview of your Cluster plan as well as 
+To edit the cluster scale, click on *Cluster scale* in the top bar. This will take
+you to a page where you can see an overview of your Cluster plan as well as 
 current cluster configuration.
 
 .. image:: _assets/img/cluster-preferences.png
@@ -70,7 +70,7 @@ current cluster configuration.
 Scale a cluster
 ===============
 
-Once arrived at the Cluster scale page, you can scale the cluster you
+Once you arrive at the Cluster scale page, you can scale the cluster you
 selected in three steps. First, click the *Edit cluster configuration* button
 in the top right.
 
