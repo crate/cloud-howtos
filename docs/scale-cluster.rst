@@ -74,7 +74,7 @@ Once you arrive at the Cluster scale page, you can scale the cluster you
 selected in three steps. First, click the *Edit cluster configuration* button
 in the top right.
 
-Secondly, choose the desired scaling value in*Choose number of nodes* sections.
+Secondly, choose the desired scaling value in the *Choose number of nodes* section.
 This expands the number of nodes in the cluster. You can also increase available
 storage per node.
 
