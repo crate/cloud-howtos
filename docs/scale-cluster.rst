@@ -58,7 +58,7 @@ allowed to connect to the cluster.
    :alt: Cloud Console cluster access settings
 
 To edit the cluster scale, click on *Cluster scale* in the top bar. This will take
-you to a page where you can see an overview of your Cluster plan as well as 
+you to a page where you can see an overview of your cluster plan as well as 
 current cluster configuration.
 
 .. image:: _assets/img/cluster-preferences.png
