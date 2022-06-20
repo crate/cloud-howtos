@@ -26,15 +26,19 @@ Load a sample dataset
 =====================
 
 To visualize data with Grafana, a dataset is needed first. In this sample, demo
-data is added directly via the CrateDB Cloud Console. To import the data go to the Overview page of your deployed cluster. 
+data is added directly via the CrateDB Cloud Console. To import the data go to
+the Overview page of your deployed cluster. 
 
 .. image:: _assets/img/grafana-overview.png
    :alt: Cloud Console cluster overview
 
 Once on the Overview page, click on the *Learn how to import data to your
 cluster* link in the bottom part of the Console. A window with 2 SQL
-statements will appear. The first of them creates a table that will host the data
-from NYC Taxi & Limousine Commission which is used in this example. The second statement imports the data into the table created in the first step. These statements must be executed in order. First "1. Create the table" and then "2. Import the data".
+statements will appear. The first of them creates a table that will host the
+data from NYC Taxi & Limousine Commission which is used in this example. The
+second statement imports the data into the table created in the first step.
+These statements must be executed in order. First "1. Create the table" and
+then "2. Import the data".
 
 .. image:: _assets/img/grafana-import.png
    :alt: Importing data to Admin UI
@@ -86,14 +90,14 @@ Once there, click on the *Add data source* button. Here, look up and choose
    :alt: Grafana integrations
 
 Once "PostgreSQL" is chosen, you will be brought to a form that you must fill
-out to connect to the CrateDB Cloud. Filled out example might look like the
+out to connect to the CrateDB Cloud. A completed example might look like the
 screenshot below.
 
 .. image:: _assets/img/grafana-connection.png
    :alt: Grafana connection form
 
-What can be different for you is *host* and *user* credentials. The host can be
-found on the Overview page of your cluster on CrateDB Cloud under the *Learn
+The *host* and *user* credentials may appear differently to you. The host can
+be found on the Overview page of your cluster on CrateDB Cloud under the *Learn
 how to connect to the cluster* link. You will want to use the psql link.
 Depending on the region where your cluster is deployed it might look something
 like: 
@@ -183,7 +187,8 @@ another one.
    :alt: Grafana add another panel to dashboard
 
 Another question worth asking might be: What was the average distance per ride
-per day? To find that out, input this to the SQL console of the new panel:
+per day? To find this out, input the following SQL statement into the console
+of the new panel:
 
 .. code-block:: console
 
