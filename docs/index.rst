@@ -43,6 +43,7 @@ documentation for :ref:`Croud <cloud-cli:index>`, the CLI for CrateDB Cloud.
     scale-cluster
     delete-cluster
     snapshot
+    visualize-data-with-grafana
 
 
 .. _GitHub: https://github.com/crate/cloud-howtos/
