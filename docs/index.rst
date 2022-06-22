@@ -41,6 +41,7 @@ documentation for :ref:`Croud <cloud-cli:index>`, the CLI for CrateDB Cloud.
     create-project
     add-users
     scale-cluster
+    suspend-cluster
     delete-cluster
     snapshot
     visualize-data-with-grafana
