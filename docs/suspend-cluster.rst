@@ -23,7 +23,11 @@ What is cluster suspension
 
 Cluster suspension is a feature that enables you to temporarily pause your
 cluster while retaining all its data. An example situation might be that the
-project you're working on has been put on hold. In that case, you don't need the computation, but you still need the storage to preserve your data. The cost of running a cluster is split into two parts: **Compute** and **Storage**. The benefit here is that while the cluster is suspended, you are only charged for the storage.
+project you're working on has been put on hold. In that case, you don't need
+the computation, but you still need the storage to preserve your data. The cost
+of running a cluster is split into two parts: **Compute** and **Storage**. The
+benefit here is that while the cluster is suspended, you are only charged for
+the storage.
 
 
 .. _how-to-suspend-a-cluster:
