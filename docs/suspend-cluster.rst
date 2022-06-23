@@ -16,7 +16,7 @@ refer to the :ref:`tutorial on how to deploy a cluster for the first time
    :local:
 
 
-.. _what-is-suspendion:
+.. _what-is-suspension:
 
 What is cluster suspension
 ==========================
@@ -61,7 +61,7 @@ Resume a cluster
 ================
 
 To resume your cluster, simply press the "Go to *Preferences* to resume
-cluster" link in the top bar, or navigate to the Cluster preferences page
+cluster" link in the top bar, or navigate to the Cluster Preferences page
 manually.
 
 After pressing the *Resume cluster* button in the top right, your cluster will
@@ -73,16 +73,16 @@ be resumed.
 
 .. _additional-info:
 
-Additional info on cluster suspension
-=====================================
+Important things to know
+========================
 
-- To suspend a cluster, you must be a Project Admin
+- To suspend a cluster, you must be a Project Admin.
 
-- You can suspend and resume clusters at any time
+- You can suspend and resume clusters at any time.
 
 - While your cluster is suspended, you will still be billed for the storage and
-  the billing cycle is unaffected
+  the billing cycle is unaffected.
 
-- Cluster backups do not expire while a cluster is suspended
+- Cluster backups do not expire while a cluster is suspended.
 
-- The Admin UI of a cluster is unavailable while the cluster is suspended
+- The Admin UI of a cluster is unavailable while the cluster is suspended.
