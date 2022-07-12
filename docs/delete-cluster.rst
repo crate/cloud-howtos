@@ -75,8 +75,8 @@ the cluster.
 You will be brought to the Cluster access tab. Here you can see your access
 information, security options and the allowlist information for the cluster in
 question. You can delete the cluster here as well. Simply click the **Delete
-cluster** at the top right. It will ask for confirmation; provide it and the
-cluster will be deleted.
+cluster** button at the top right. It will ask for confirmation; provide it and
+the cluster will be deleted.
 
 
 .. _delete-cluster-az-portal:
