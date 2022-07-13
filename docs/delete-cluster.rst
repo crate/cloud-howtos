@@ -52,8 +52,8 @@ admin access. For more on what that means, please see our documentation on
 
 In the Console, first we have to select the correct project within which the
 cluster was deployed. To do this, go to the Projects page. Here you will see
-an overview of all projects. If you followed the previous tutorial, there
-should be just one.
+an overview of all projects. Select the one that contains the cluster you want
+to delete.
 
 .. image:: _assets/img/projects.png
    :alt: Cloud Console projects overview
@@ -63,19 +63,20 @@ displayed in the regions dropdown menu to see the correct project, or select
 'All' in the dropdown menu.
 
 Next, we need to display the cluster in question. To do this, we need to access
-the Cluster Settings page in the left-hand sidebar, below the divider line. The
-name of the cluster you have created should appear in this sidebar; simply
-click on it and the menu will 'roll out', showing the Settings option. This is
-the one we want. Clicking this will lead to the Cluster Settings page for the
-cluster.
+the Cluster Preferences page in the left-hand sidebar, below the divider line.
+The name of the cluster you have created should appear in this sidebar; simply
+click on it and the menu will 'roll out', showing the Preferences option. This
+is the one we want. Clicking this will lead to the Cluster Preferences page for
+the cluster.
 
-.. image:: _assets/img/cluster-settings.png
+.. image:: _assets/img/cluster-preferences2.png
    :alt: Cloud Console cluster settings
 
-On this page, you will see size and scaling information for the cluster in
-question. You can delete the cluster here as well. Simply click the bin icon at
-the top right. It will ask for confirmation; provide it and the cluster will be
-deleted.
+You will be brought to the Cluster access tab. Here you can see your access
+information, security options and the allowlist information for the cluster in
+question. You can delete the cluster here as well. Simply click the **Delete
+cluster** button at the top right. It will ask for confirmation; provide it and
+the cluster will be deleted.
 
 
 .. _delete-cluster-az-portal:
