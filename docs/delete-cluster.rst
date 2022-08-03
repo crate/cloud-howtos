@@ -32,7 +32,7 @@ Microsoft Azure
 ===============
 
 If you have followed the steps of our :ref:`tutorial on how to set up a cluster
-from scratch via Microsoft Azure <cloud-tutorials:deploy-to-cluster-azure>`,
+from scratch via Microsoft Azure <cloud-tutorials:signup-azure-to-cluster>`,
 you should have one running. If you created your CrateDB Cloud cluster
 via the Microsoft Azure offering, you have two different ways to delete a
 cluster once it has been created. The first is through the CrateDB Cloud
