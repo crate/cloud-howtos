@@ -112,3 +112,4 @@ When scaling a cluster, there are essential aspects to keep in mind:
 
 - Horizontal scaling is often a better choice than scaling the storage itself.
   Scaling the storage is irreversible, while the cluster can be scaled down again.
+

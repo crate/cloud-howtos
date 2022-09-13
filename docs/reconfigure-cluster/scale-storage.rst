@@ -101,4 +101,3 @@ mind:
 
 - If you're expecting only a temporary traffic increase, scaling the amount of
 nodes in a cluster might be a better choice as this operation can be reversed.
-
