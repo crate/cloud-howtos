@@ -43,17 +43,17 @@ projects associated with your organization. Select the one that has the cluster
 you want to edit deployed in it. Please ensure the correct region is
 selected in the dropdown menu at the top left to see the desired projects.
 
-In the menu on the left hand, you should see below the divider line an icon or
+In the menu on the left hand side, below the divider line, you should see an icon or
 icons representing all clusters associated with the currently selected project.
 Here, find the correct cluster and click on the icon. It will expand and show
-links for four pages: *Overview*, *Backups*, *Metrics*, and *Preferences*.
+links to four pages: *Overview*, *Backups*, *Metrics*, and *Preferences*.
 
 .. image:: ../_assets/img/cluster-dropdown.png
    :alt: Cloud Console projects cluster selection
 
 Click on *Preferences*. This will take you to the cluster access page, where
 you can see and edit your credentials. You can also enable deletion protection 
-of your cluster and create a whitelist of IP addresses or CIDR blocks that are
+for your cluster and create a whitelist of IP addresses or CIDR blocks that are
 allowed to connect to the cluster. 
 
 .. image:: ../_assets/img/cluster-access.png
