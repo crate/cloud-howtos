@@ -95,4 +95,4 @@ When changing the cluster plan, there are things to keep in mind:
 
 - Switching plans is bi-directional, both up and down.
 
-- Scaling down to CR0 is NOT supported.
+- Changing the plan down to CR0 is NOT supported.
