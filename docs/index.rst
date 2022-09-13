@@ -40,7 +40,7 @@ documentation for :ref:`Croud <cloud-cli:index>`, the CLI for CrateDB Cloud.
     create-org
     create-project
     add-users
-    scale-cluster
+    reconfigure-cluster/index
     suspend-cluster
     delete-cluster
     snapshot
