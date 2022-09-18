@@ -67,7 +67,7 @@ Our example statement looks like this:
 .. code-block:: console
 
   COPY taxi
-  FROM 'https://raw.githubusercontent.com/crate/cloud-howtos/master/docs/_extra/example-table.json'
+  FROM 'https://raw.githubusercontent.com/crate/cloud-howtos/master/docs/_extra/example-dataset.json'
   RETURN SUMMARY;
 
 This statement will import a small example dataset that is hosted in our GitHub
