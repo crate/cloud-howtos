@@ -1,0 +1,5 @@
+{"vendorid": "2", "pickup_datetime": 1561942293000, "passenger_count": "1", "trip_distance": "3.00"}
+{"vendorid": "1", "pickup_datetime": 2611945293000, "passenger_count": "2", "trip_distance": "1.5"}
+{"vendorid": "2", "pickup_datetime": 8456945294100, "passenger_count": "3", "trip_distance": "6"}
+{"vendorid": "3", "pickup_datetime": 8474563782100, "passenger_count": "2", "trip_distance": "4"}
+{"vendorid": "1", "pickup_datetime": 8634917782100, "passenger_count": "1", "trip_distance": "2"}
