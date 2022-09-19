@@ -4,7 +4,7 @@
 Import data
 ===========
 
-This guide demonstrates how to import data to your CrateDB Cloud
+This guide demonstrates how to import data into your CrateDB Cloud
 cluster. This how-to assumes that you already have a cluster running. If you
 need help starting a cluster, please see :ref:`tutorial on how to deploy a
 cluster for the first time <cloud-tutorials:cluster-deployment>`.
@@ -20,7 +20,7 @@ cluster for the first time <cloud-tutorials:cluster-deployment>`.
 Pre-requisite
 -------------
 
-To import data to your cluster, you need to have access to your cluster's
+To import data into your cluster, you need to have access to your cluster's
 Admin UI. The username is always ``admin`` and the password is set upon cluster
 deployment.
 
