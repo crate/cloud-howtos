@@ -45,6 +45,7 @@ documentation for :ref:`Croud <cloud-cli:index>`, the CLI for CrateDB Cloud.
     delete-cluster
     snapshot
     import-data
+    connect-to-cluster/index
     visualize-data-with-grafana
 
 
