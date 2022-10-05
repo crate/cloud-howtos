@@ -17,8 +17,8 @@ clusters. For a full documentation and all use-cases of logical replication
 .. contents::
    :local:
 
-Configuration
--------------
+Configure logical replication
+-----------------------------
 
 Logical replication uses publication-subscription system. A publication is
 created on a cluster from which the data should be copied, and a subscription
@@ -48,5 +48,37 @@ Example subscription:
 .. NOTE::
 
    The ``mode=pq_tunnel`` is tunnel mode is needed when the cluster is not
-   reachable directly (outside of the network). Which, when working with
+   reachable directly (i.e. a different network). Which, when working with
    CrateDB Cloud cluster, is basically always.
+
+Disable logical replication
+---------------------------
+
+To disable the feature you need to remove the publication from the cluster
+that serves as the datasource, and remove the subscription from the cluster
+that serves as the target.
+
+Remove a publication from Cluster 1
+'''''''''''''''''''''''''''''''''''
+
+Example publication:
+
+.. code-block:: sql
+
+  DROP PUBLICATION mypublication
+
+Remove a subscription from Cluster 2
+''''''''''''''''''''''''''''''''''''
+
+Example subscription:
+
+.. code-block:: sql
+
+  DROP SUBSCRIPTION mysubscription 
+
+Conclusion
+----------
+
+This is a configuration that works out-of-the-box on CrateDB Cloud Cluster.
+For all the configuration options :ref:`see the full logical
+replication documentation. <administration-logical-replication>`
