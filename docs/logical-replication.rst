@@ -47,9 +47,14 @@ Example subscription:
 
 .. NOTE::
 
-   The ``mode=pq_tunnel`` is tunnel mode is needed when the cluster is not
-   reachable directly (i.e. a different network). Which, when working with
-   CrateDB Cloud cluster, is basically always.
+   By default, CrateDB uses the transport protocol (on port 4300) for logical
+   replication. If the port is not available (such as with CrateDB Cloud), the
+   ``mode=pg_tunnel`` can be used to tunnel over the Postgres protocol (port 5432).
+
+That's it in terms of configuration. Data from Cluster 1 will now be
+automatically replicated on Cluster 2. This feature can also be configured on
+multiple clusters, for example you could create another subscription on Cluster
+3 to ensure high availability.
 
 Disable logical replication
 ---------------------------
