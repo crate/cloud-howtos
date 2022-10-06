@@ -42,7 +42,7 @@ Example subscription:
 .. code-block:: sql
 
   CREATE SUBSCRIPTION mysubscription 
-  CONNECTION'crate://gold-ackbar.aks1.eastus.azure.cratedb.net?mode=pg_tunnel&user=admin&password=98%2AQ3%26v1i%28-1OH-vFq9W2wYB' 
+  CONNECTION 'crate://your-cluster-url.cratedb.net?mode=pg_tunnel&user=your_user&password=your_password' 
   PUBLICATION mypublication;
 
 .. NOTE::
