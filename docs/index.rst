@@ -47,6 +47,7 @@ documentation for :ref:`Croud <cloud-cli:index>`, the CLI for CrateDB Cloud.
     import-data
     connect-to-cluster/index
     visualize-data-with-grafana
+    logical-replication
 
 
 .. _GitHub: https://github.com/crate/cloud-howtos/
