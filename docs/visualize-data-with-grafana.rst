@@ -223,5 +223,5 @@ more, refer to the `Grafana documentation`_.
 
 .. _Grafana: https://www.grafana.com/
 .. _Grafana documentation: https://grafana.com/docs/grafana/latest/?pg=oss-graf&plcmt=quick-links
-.. _Grafana panels: https://grafana.com/docs/grafana/next/panels/
+.. _Grafana panels: https://grafana.com/docs/grafana/latest/panels/
 .. _epoch time: https://en.wikipedia.org/wiki/Unix_time
