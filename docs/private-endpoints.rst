@@ -4,10 +4,12 @@
 Configure a private endpoint
 ============================
 
-A private endpoint, or private link, is a mechanism that allows a secure, private
-connection to your cluster. Effectively, it allows you to bypass the public
-internet when accessing the environment where your cluster is deployed. CrateDB
-Cloud supports both AWS and Azure private endpoints.
+A private endpoint, or private link, is a mechanism that allows a secure,
+private connection to your cluster. Effectively, it allows you to bypass the
+public internet when accessing the environment where your cluster is deployed.
+CrateDB Cloud supports both AWS and Azure private endpoints. To create a
+private endpoint, you need to deploy a cluster first. To do that go to the
+`Cloud Console`_.
 
 .. rubric:: Table of contents
 
@@ -36,4 +38,5 @@ your CrateDB Cloud cluster.
 
 .. _AWS: https://docs.aws.amazon.com/vpc/latest/privatelink
 .. _Azure: https://learn.microsoft.com/en-us/azure/private-link/
+.. _Cloud Console: https://console.cratedb.cloud/?utm_campaign=2022-Q3-WS-Developer-Motion&utm_source=docs
 .. _contact us: https://crate.io/contact
