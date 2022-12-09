@@ -50,34 +50,12 @@ Console. Make sure you are logged in to the Console with a user that has org
 admin access. For more on what that means, please see our documentation on
 :ref:`user roles <cloud-reference:user-roles>`.
 
-In the Console, first we have to select the correct project within which the
-cluster was deployed. To do this, go to the Projects page. Here you will see
-an overview of all projects. Select the one that contains the cluster you want
-to delete.
-
-.. image:: _assets/img/projects.png
-   :alt: Cloud Console projects overview
-
-Select the relevant project by clicking on it. Make sure the correct region is
-displayed in the regions dropdown menu to see the correct project, or select
-'All' in the dropdown menu.
-
-Next, we need to display the cluster in question. To do this, we need to access
-the Cluster Preferences page in the left-hand sidebar, below the divider line.
-The name of the cluster you have created should appear in this sidebar; simply
-click on it and the menu will 'roll out', showing the Preferences option. This
-is the one we want. Clicking this will lead to the Cluster Preferences page for
-the cluster.
-
-.. image:: _assets/img/cluster-preferences2.png
-   :alt: Cloud Console cluster settings
-
-You will be brought to the Cluster access tab. Here you can see your access
-information, security options and the allowlist information for the cluster in
-question. You can delete the cluster here as well. Simply click the **Delete
-cluster** button at the top right. It will ask for confirmation; provide it and
-the cluster will be deleted.
-
+First, you need to select the cluster in question. To do this, we need to
+access the Clusters page in the left-hand sidebar. There you should see a list
+of all your clusters. Simply click the "View" button on the one you want to
+delete. This will bring you to the overview of said cluster. There will be a
+"Delete cluster" button in the top right corner. Clicking this button will
+delete your cluster.
 
 .. _delete-cluster-az-portal:
 
