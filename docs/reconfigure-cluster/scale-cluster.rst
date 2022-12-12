@@ -5,15 +5,16 @@ Scale the cluster
 =================
 
 This guide will provide a quick overview of how to scale (horizontal scaling)
-your cluster using the CrateDB Cloud Console. Scaling the cluster adds
-additional nodes to your cluster, thus increasing the performance. Nodes can
-also be removed. This guide assumes that you have a
-cluster up and running and can access the Console. If not, please refer to the
+your cluster using the CrateDB Cloud Console. Scaling the cluster is the best
+way to increase your cluster's performance. Nodes can be both added and
+removed. This guide assumes that you have a cluster up and running and can
+access the Console. If not, please refer to the
 :ref:`tutorial on how to deploy a cluster for the first time
 <cloud-tutorials:cluster-deployment>`.
 
 If you scale your cluster downward rather than upward, a special configuration
-may be required: see :ref:`Important things to know <scale-cluster-important>`.
+may be required: 
+see :ref:`Important things to know <scale-cluster-important>`.
 
 .. NOTE::
 
@@ -25,72 +26,35 @@ may be required: see :ref:`Important things to know <scale-cluster-important>`.
 .. contents::
    :local:
 
+.. _cluster-scale-steps:
 
-.. _scale-cluster-preferences:
+Steps to scaling the cluster
+============================
 
-Find the Cluster Preferences page
-=================================
+To scale your cluster in the Console, navigate to the Clusters page in
+the left-hand menu. Here you can see a list of all your clusters. Click *View*
+on the cluster you wish to scale.
 
-To scale your clusters in the Console, navigate to the Cluster Preferences
-page. When you first access the Console, you will arrive at the Organization
-page.
+.. image:: ../_assets/img/clusters-overview.png
+   :alt: Cloud Console Clusters overview
 
-.. image:: ../_assets/img/organization-overview.png
-   :alt: Cloud Console organization overview
+This will bring you to the Overview page of your chosen cluster. 
 
-To scale a cluster, you need to know to which project the cluster belongs. Go
-to the Projects page in the left-hand menu to find an overview of all projects
-associated with your organization. Select the one that has the cluster you want
-to scale deployed in it. Please ensure the correct region is selected in the
-dropdown menu at the top left to see the desired projects.
+.. image:: ../_assets/img/cluster-overview.png
+   :alt: Cloud Console Clusters overview
 
-In the menu on the left hand, you should see below the divider line an icon or
-icons representing all clusters associated with the currently selected project.
-Here, find the correct cluster and click on the icon. It will expand and show
-links for four pages: *Overview*, *Backups*, *Metrics*, and *Preferences*.
+Once here, navigate to the Scale page. Simply click the *Edit cluster
+configuration* to scale the cluster:
 
-.. image:: ../_assets/img/cluster-dropdown.png
-   :alt: Cloud Console projects cluster selection
+.. image:: ../_assets/img/cluster-scale-page.png
+   :alt: Cloud Console Clusters overview
 
-Click on *Preferences*. This will take you to the cluster access page, where
-you can see and edit your credentials. You can also enable deletion protection 
-of your cluster and create a whitelist of IP addresses or CIDR blocks that are
-allowed to connect to the cluster. 
+Now you can scale your cluster.
 
-.. image:: ../_assets/img/cluster-access.png
-   :alt: Cloud Console cluster access settings
+.. image:: ../_assets/img/cluster-edit-cluster-config.png
+   :alt: Cloud Console Clusters overview
 
-To edit the cluster scale, click on *Cluster scale* in the top bar. This will
-take you to a page where you can see an overview of your cluster plan as well
-as your current cluster configuration.
-
-.. image:: ../_assets/img/cluster-preferences.png
-   :alt: Cloud Console cluster preferences
-
-
-.. _scale-cluster-instructions:
-
-Scale a cluster
-===============
-
-Once you arrive at the Cluster scale page, you can scale the cluster you
-selected in three steps. First, click the *Edit cluster configuration* button
-in the top right.
-
-Secondly, choose the desired scaling value in the *Choose number of nodes*
-section. This expands the number of nodes in the cluster.
-
-Finally, confirm with *Save*.
-
-.. image:: ../_assets/img/cluster-scale-dropdown.png
-   :alt: Cloud Console cluster settings scaling menu
-
-The values corresponding to each scale unit will vary depending on the plan
-selected for the cluster. This also affects the cluster configuration and
-pricing. A warning will remind the user that changing scale settings
-will be reflected in the billed charges. You can see the new
-prices of *Compute* and *Storage* in the bottom right.
-
+After you've made your changes, click *Save* to apply your changes.
 
 .. _scale-cluster-important:
 
@@ -111,5 +75,5 @@ When scaling a cluster, there are essential aspects to keep in mind:
   documentation about :ref:`replication <crate-reference:ddl-replication>`.
 
 - Horizontal scaling is often a better choice than scaling the storage itself.
-  Scaling the storage is irreversible, while the cluster can be scaled down again.
-
+  Scaling the storage is irreversible, while the cluster can be scaled down
+  again.
