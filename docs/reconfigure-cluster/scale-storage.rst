@@ -29,64 +29,36 @@ things to know <scale-storage-important>`.
    :local:
 
 
-.. _scale-storage-preferences:
+.. _cluster-scale-storage-steps:
 
-Find the Cluster Preferences page
-=================================
+Steps to scaling the storage
+============================
 
-To scale your cluster storage in the Console, navigate to the Cluster
-Preferences page. When you first access the Console, you will arrive at the
-Organization page.
+To scale the storage of your cluster, first navigate to the Clusters page in
+the left-hand menu. Here you can see a list of all your clusters. Click *View*
+on the cluster where you want to scale the storage.
 
-.. image:: ../_assets/img/organization-overview.png
-   :alt: Cloud Console organization overview
+.. image:: ../_assets/img/clusters-overview.png
+   :alt: Cloud Console Clusters overview
 
-To scale the cluster storage, you need to know what project the cluster belongs
-to. Go to the Projects page in the left-hand menu to find an overview of all
-projects associated with your organization. Select the one that has the cluster
-you want to scale deployed in it. Please ensure the correct region is
-selected in the dropdown menu at the top left to see the desired projects.
+This will bring you to the Overview page of your chosen cluster. 
 
-In the menu on the left hand side, below the divider line, you should see an icon or
-icons representing all clusters associated with the currently selected project.
-Here, find the correct cluster and click on the icon. It will expand and show
-links for four pages: *Overview*, *Backups*, *Metrics*, and *Preferences*.
+.. image:: ../_assets/img/cluster-overview.png
+   :alt: Cloud Console Clusters overview
 
-.. image:: ../_assets/img/cluster-dropdown.png
-   :alt: Cloud Console projects cluster selection
+Once here, navigate to the Scale page. Simply click the *Edit cluster
+configuration* to scale the storage of the cluster:
 
-Click on *Preferences*. This will take you to the Cluster Access page, where
-you can see and edit your credentials. You can also enable deletion protection 
-for your cluster and create a whitelist of IP addresses or CIDR blocks that are
-allowed to connect to the cluster. 
+.. image:: ../_assets/img/cluster-scale-page.png
+   :alt: Cloud Console Clusters overview
 
-.. image:: ../_assets/img/cluster-access.png
-   :alt: Cloud Console cluster access settings
+Now you can scale the storage of your cluster. Keep in mind that scaling
+storage down again is not allowed.
 
-To edit the cluster storage, click on *Cluster scale* in the top bar. This will
-take you to a page where you can see an overview of your cluster plan as well
-as current cluster configuration.
+.. image:: ../_assets/img/cluster-edit-storage-menu.png
+   :alt: Cloud Console Clusters overview
 
-.. image:: ../_assets/img/cluster-preferences.png
-   :alt: Cloud Console cluster preferences
-
-
-.. _scale-storage-instructions:
-
-Scale the storage instructions
-==============================
-
-Once you arrive at the Cluster scale page, you can scale the cluster you
-selected in three steps. First, click the *Edit cluster configuration* button
-in the top right.
-
-Secondly, choose the desired scaling value in the *Storage*
-section. This will increase the per-node storage of your cluster.
-
-Finally, confirm with *Save*.
-
-.. image:: ../_assets/img/cluster-scale-dropdown.png
-   :alt: Cloud Console cluster settings scaling menu
+After you've made your changes, click *Save* to apply your changes.
 
 .. _scale-storage-important:
 

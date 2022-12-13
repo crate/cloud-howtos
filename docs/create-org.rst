@@ -31,8 +31,8 @@ the page will display an empty box logo and the message *No organization yet*.
 .. image:: _assets/img/create-org.png
    :alt: Cloud Console org overview without organization
 
-In order to create an organization, fill out the organization name in the space
-provided, and click *Create organization*.
+In order to create an organization, fill out the organization name in the
+space provided, and click *Create organization*.
 
 When the organization has been created, you will be returned to the
 Organization overview.
@@ -54,11 +54,9 @@ To create a new organization, click on *Create new organization* at the top
 right above the organization list. The organization creation process is then
 the same as that described above for a first organization. To delete an
 organization, click the trashcan icon next to the organization in the list.
-Organizations can only be deleted after deleting the projects and clusters they
-contain first.
 
 To switch the active organization, click on the organization name in the list.
-All organization, project, and cluster management options displayed in the
+All organization and cluster management options displayed in the
 CrateDB Cloud Console will then refer to that organization until you switch
 organizations again.
 
@@ -83,7 +81,7 @@ notification settings.
 
 In the Users tab you can add users to the organization at organization level.
 For more on adding users, see our :ref:`guide to adding users to organizations
-and projects <add-users>`. To understand roles and role definitions, see our
+<add-users>`. To understand roles and role definitions, see our
 :ref:`guide to user roles in CrateDB Cloud <cloud-reference:overview>`.
 
 The Audit Log tab allows the organization admin access to the audit log. For
@@ -99,12 +97,6 @@ deploy a cluster in that region. It also allows you to create a custom region.
 
 Finally, the Subscriptions tab displays your current subscription and gives
 options for creating a new subscription with our supported cloud providers.
-
-To create a new project within the organization, go to the Projects page
-after creating your organization. A description of this process can be found
-:ref:`here <create-project>`. To directly create a new cluster, go to the
-Dashboard tab and click on *Deploy new cluster*.
-
 
 .. _cluster deployment tutorial: https://crate.io/docs/cloud/tutorials/en/latest/cluster-deployment/stripe.html
 .. _user role: https://crate.io/docs/cloud/reference/en/latest/user-roles.html
