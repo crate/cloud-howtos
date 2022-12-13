@@ -54,7 +54,7 @@ Now you can scale your cluster.
 .. image:: ../_assets/img/cluster-edit-cluster-config.png
    :alt: Cloud Console Clusters overview
 
-After you've made your changes, click *Save* to apply your changes.
+After you've made your changes, click *Save* to apply them.
 
 .. _scale-cluster-important:
 
