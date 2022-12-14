@@ -58,7 +58,7 @@ storage down again is not allowed.
 .. image:: ../_assets/img/cluster-edit-storage-menu.png
    :alt: Cloud Console Clusters overview
 
-After you've made your changes, click *Save* to apply your changes.
+After you've made your changes, click *Save* to apply them.
 
 .. _scale-storage-important:
 
