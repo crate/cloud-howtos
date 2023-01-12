@@ -46,16 +46,24 @@ Deleting a cluster via the CrateDB Cloud Console
 ------------------------------------------------
 
 The easiest and preferred way to delete a cluster is via the CrateDB Cloud
-Console. Make sure you are logged in to the Console with a user that has org
-admin access. For more on what that means, please see our documentation on
-:ref:`user roles <cloud-reference:user-roles>`.
+Console. Make sure you are logged in to the Console with a user that has
+admin access in the organization where your cluster is deployed. For more on
+what that means, please see our documentation on :ref:`user roles
+<cloud-reference:user-roles>`.
 
 First, you need to select the cluster in question. To do this, we need to
 access the Clusters page in the left-hand sidebar. There you should see a list
-of all your clusters. Simply click the "View" button on the one you want to
+of all your clusters. 
+
+.. image:: /_assets/img/clusters-overview.png
+   :alt: Cloud Console Clusters overview
+
+Simply click the "View" button on the one you want to
 delete. This will bring you to the overview of said cluster. There will be a
-"Delete cluster" button in the top right corner. Clicking this button will
-delete your cluster.
+"Delete cluster" button in the top right corner. After clicking this button,
+you will be prompted to input the name of the cluster to avoid accidental
+deletion of your cluster. After you submit by clicking *Confirm*, your cluster
+will be deleted.
 
 .. _delete-cluster-az-portal:
 
@@ -124,7 +132,7 @@ dropdown menu, select *Your Marketplace Software*.
    :alt: AWS Marketplace landing page
 
 This will take you to an overview of your AWS Marketplace subscriptions. You
-should see CrateDB Cloud there. Each subscription item has a button labelled
+should see CrateDB Cloud there. Each subscription item has a button labeled
 *Manage*. Click this button for CrateDB Cloud.
 
 .. image:: _assets/img/aws-subscriptions.png
@@ -139,7 +147,7 @@ the top right corner there is a button labelled *Actions*.
 This generates a drop-down menu with various options for interacting with the
 offer. In this menu, click the option *Cancel subscription*.
 
-A warning will appear, stating that cancelling the subscription will not
+A warning will appear stating that canceling the subscription will not
 terminate your running services. Do not worry: upon receiving a notice of
 cancellation of the subscription, the CrateDB Cloud team will terminate your
 running services for you. Therefore, you can safely cancel your subscription
