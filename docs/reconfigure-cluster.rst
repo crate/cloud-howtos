@@ -4,8 +4,8 @@ Reconfigure cluster
 -------------------
 
 Reconfiguring or scaling your cluster can be done in the Scale tab.
-The page shows the current configuration of your cluster is shown. You can 
-see  your current plan, the resources of a single node, and the overall
+The page shows the current configuration of your cluster. You can
+see your current plan, the resources of a single node, and the overall
 resources of the cluster.
 
 .. image:: _assets/img/cluster-scale.png
