@@ -162,7 +162,7 @@ plot the number of rides per day in the first week of July 2019:
    is that your query needs to return a column called "time". Grafana will 
    identify this as your time metric, so make sure the column has the proper 
    datatype (any datatype representing an `epoch time`_). In this query, 
-   we're labelling pickup_datetime as "time" for this reason.
+   we're labeling pickup_datetime as "time" for this reason.
 
 Once you input these SQL statements, there are a couple of adjustments you can
 make:
