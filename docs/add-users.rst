@@ -27,38 +27,24 @@ below).
 Add users to an organization
 ============================
 
-New users can be added to an organization by going to the Organization overview
-page in the Console if you are logged in as organization admin. (For more
-information on user roles and associated privileges, see our documentation on
-:ref:`user roles <cloud-reference:user-roles>`.) At the top, you will see seven
-tabs.
+New users can be added to an organization by going to the Users tab in the
+left-hand menu. To add and manage users of the organization, you must be the
+organization admin. (For more information on user roles and associated
+privileges, see our documentation on 
+:ref:`user roles <cloud-reference:user-roles>`.)
 
-.. image:: _assets/img/organization-overview.png
-   :alt: Cloud Console organization overview
+.. image:: _assets/img/users-overview.png
+   :alt: Cloud Console users overview
 
-Click the *Users* tab to see an overview of all users associated with the
-organization. It will show their username, email, and user role.
+On this page you can see an overview of all users associated with the
+organization. It will show their username, email, user role, and their status.
 
-To add a new user click the *Add user* button in the top right.
+To add a new user click the *Add user* button in the top right. Then you can
+add new user either by their email, or their user ID. You can also choose
+whether the user should have admin privileges.
 
-.. image:: _assets/img/organization-users.png
+.. image:: _assets/img/add-user.png
    :alt: Cloud Console organization overview users tab
-
-First, enter the email address the user signed up with.
-
-Second, select the :ref:`role <cloud-reference:user-roles>` you want to give
-the user in your organization.
-
-Finally, click *Save*.
-
-.. image:: _assets/img/organization-users-dropdown.png
-   :alt: Cloud Console org add user dropdown menu
-
-A user who is a member of more than one organization can at any time switch
-between organizations by using the dropdown menu at the top right of the
-Organization overview screen. For a detailed overview of all the Organization
-tabs, refer to our `Console overview`_.
-
 
 .. _add-users-edit:
 
@@ -76,5 +62,3 @@ Restrictions
 
 - An organization needs to have at least one organization admin. It is
   therefore not possible to remove the organization admin if there is only one.
-
-.. _Console overview: https://crate.io/docs/cloud/reference/en/latest/overview.html
