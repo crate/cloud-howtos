@@ -16,8 +16,8 @@ Admin UI of your cluster.
 Import data from URL
 --------------------
 
-The more convenient method for importing data is to import from a URL
-directly in your Cloud Console. See details `here`_.
+The most convenient method for importing data is to import from a URL
+directly in the Cloud Console. See details `here`_.
 
 Import data in the Admin UI
 ---------------------------
