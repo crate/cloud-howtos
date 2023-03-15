@@ -22,9 +22,8 @@ directly in the Cloud Console. See details `here`_.
 Import data in the Admin UI
 ---------------------------
 
-If your data isn't publicly available or is in a format unsupported by URL
-import in the Cloud Console, you will have to import manually from the Admin 
-UI.
+If you prefer, you can use a ``COPY FROM`` statement to import data directly 
+into your CrateDB Cloud cluster.
 
 .. _prerequisite:
 
