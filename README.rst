@@ -1,3 +1,9 @@
+**Contents of this repo are outdated and for archival purposes only. Updated version now lives in the cloud-docs repository: https://github.com/crate/cloud-docs**
+
+
+
+
+
 ===========================
 CrateDB Cloud How-To Guides
 ===========================
